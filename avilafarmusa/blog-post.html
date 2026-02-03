@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Primary Meta Tags -->
+        <title>Gamefowl Blog - Breeding Tips, News & Stories | Avila Farm USA</title>
+        
+        <meta name="description" content="Expert gamefowl breeding articles, bloodline histories, care tips, and farm updates from Avila Farm USA. Learn from 37 years of Texas Hill Country breeding experience.">
+        
+        <meta name="keywords" content="gamefowl blog, breeding articles, bloodline history, poultry news, gamefowl tips, Avila Farm blog, Texas gamefowl news, breeding stories">
+        
+        <meta name="robots" content="index, follow">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://yourwebsite.com/blog-post.html">
+        <meta property="og:title" content="Gamefowl Blog - Expert Articles & Updates | Avila Farm USA">
+        <meta property="og:description" content="Educational articles on gamefowl breeding, bloodline histories, care guides, and ranch updates from our family farm in Texas Hill Country.">
+        <meta property="og:image" content="https://yourwebsite.com/images/blog-header.jpg">
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Gamefowl Blog | Avila Farm USA">
+        <meta name="twitter:description" content="Expert breeding tips, bloodline stories, and farm updates from Texas Hill Country.">
+        
+        <!-- Blog Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "Avila Farm USA Gamefowl Blog",
+          "description": "Expert articles on gamefowl breeding, care, and bloodline histories",
+          "url": "https://yourwebsite.com/blog-post.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Avila Farm USA",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://yourwebsite.com/images/logo.png"
+            }
+          }
+        }
+        </script>
+        
+        <!-- Canonical -->
+        <link rel="canonical" href="https://yourwebsite.com/blog-post.html">
+    </head>
+    <style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: #0a0a0a;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(255, 71, 87, 0.15) 0%, rgba(255, 107, 129, 0.15) 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 L50 50 L0 100 L100 100 L50 50 L100 0 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+    background-size: 100px 100px;
+    opacity: 0.3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    margin-top: 1rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 3rem auto;
+}
+
+.blog-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #ff4757;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 71, 87, 0.4);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #38292a 0%, #3d3033 100%);
+    color: white;
+    padding: 2rem;
+}
+
+.card-category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+    color: #5eead4;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.card-body {
+    padding: 2.5rem;
+}
+
+.card-excerpt {
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.card-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.card-content.expanded {
+    max-height: 15000px;
+    opacity: 1;
+}
+
+.full-content {
+    color: #e0e0e0;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    padding-top: 1.5rem;
+}
+
+.full-content h3 {
+    color: #ff6b81;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.full-content p {
+    margin-bottom: 1.2rem;
+    color: #e0e0e0;
+}
+
+.full-content ul {
+    margin: 1rem 0 1.5rem 2rem;
+}
+
+.full-content li {
+    margin-bottom: 0.8rem;
+    color: #e0e0e0;
+}
+
+.full-content strong {
+    color: #5eead4;
+    font-weight: 600;
+}
+
+.see-more-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #5e0f16, #8c3743);
+    color: white;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 15px rgba(10, 10, 10, 0.4);
+}
+
+.see-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(6, 5, 5, 0.6);
+    background: linear-gradient(135deg, #8b1627, #ff4757);
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    border-top: 1px solid #2a2a2a;
+    margin-top: 1.5rem;
+}
+
+.read-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    color: white;
+    padding: 3rem 0;
+    margin-top: 3rem;
+    text-align: center;
+    border-top: 3px solid #ff4757;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #5eead4 0%, #14b8a6 100%);
+    color: #134e4a;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(94, 234, 212, 0.4);
+    border: 2px solid #5eead4;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(94, 234, 212, 0.6);
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+    color: white;
+}
+
+footer {
+    background: #0a0a0a;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 0;
+    border-top: 1px solid #2a2a2a;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+.home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);
+    box-shadow: 0 6px 20px rgba(14, 13, 13, 0.6);
+}
+
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.up:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);
+    box-shadow: 0 6px 20px rgba(10, 10, 10, 0.6);
+}
+
+@media (max-width: 768px) {
+    .home-btn {
+        top: 10px;
+        left: 10px;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .up {
+        bottom: 10px;
+        right: 10px;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="home-btn">← Home</a>
+<a href="#top" class="up">↑ Top</a>
+        <div class="container">
+            <h1>🐓 Texas Gamefowl Knowledge Center</h1>
+            <p class="subtitle">Expert Breeding Insights & American Gamefowl Education</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="blog-grid">
+            <!-- Article 1 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Bloodlines & Genetics</div>
+                    <div class="card-title">Top American Gamefowl Bloodlines in Texas: Which is Right for You?</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Discover the characteristics of elite American gamefowl bloodlines including Kelso, Hatch, Roundhead, and Sweater. Learn which bloodline matches your breeding goals and Texas climate conditions.</p>
+                    
+                    <div class="card-content" id="content1">
+                        <div class="full-content">
+                            <h3>Understanding Bloodline Characteristics</h3>
+                            <p>Choosing the right gamefowl bloodline is the foundation of successful breeding. Each bloodline has been developed over decades to emphasize specific traits, temperaments, and performance characteristics. Here in Texas, certain bloodlines have proven particularly well-adapted to our climate and conditions.</p>
+
+                            <h3>Kelso Bloodline</h3>
+                            <p>The Kelso is one of the most respected and sought-after bloodlines in American gamefowl breeding. Developed by Walter Kelso, these birds are known for their intelligence, cutting ability, and consistent performance. Kelsos typically feature a medium build with excellent leg structure and are famous for their smart fighting style.</p>
+                            <p>Key characteristics include superior gameness, multiple shuffle capabilities, and exceptional endurance. They adapt well to Texas heat and are excellent for breeders looking for reliability and proven genetics. Kelso fowl typically weigh 5-5.5 pounds at maturity and show red, white, or black coloring with tight feathering.</p>
+
+                            <h3>Hatch Bloodline</h3>
+                            <p>Hatch fowl are power birds known for their aggressive nature and devastating single-stroke ability. These birds typically have a more muscular build and are favored by breeders who appreciate raw power and direct combat style. The Hatch bloodline includes several variations like Blueface Hatch, McLean Hatch, and Sweater Hatch.</p>
+                            <p>Texas breeders appreciate Hatch birds for their hardiness and ability to perform in various conditioning programs. They require experienced handling due to their aggressive temperament even outside competitive settings. Hatch fowl excel in warm climates and maintain their condition well during Texas summers.</p>
+
+                            <h3>Roundhead Bloodline</h3>
+                            <p>Roundheads are the thinking strategist's gamefowl. These birds are known for their patient approach, excellent timing, and ability to wait for the perfect moment to strike. They feature exceptional footwork and are master counter-fighters. The Roundhead bloodline is perfect for breeders who value intelligence over pure aggression.</p>
+                            <p>In Texas conditions, Roundheads maintain their cool demeanor and perform exceptionally well when properly conditioned. They're ideal for breeding programs focused on producing smart, tactical birds that can adapt to various opponents and situations.</p>
+
+                            <h3>Sweater Bloodline</h3>
+                            <p>Sweaters combine speed, power, and gameness in one impressive package. Developed by Carol Nesmith, these birds are known for their fast-breaking style and relentless attack. They typically show red or white feathering and have a reputation for never quitting regardless of circumstances.</p>
+                            <p>Texas breeders value Sweaters for their adaptability and consistent performance across different weight classes. They're excellent for cross-breeding programs to add speed and gameness to other lines. Sweaters handle heat well and maintain their aggressive edge even in challenging conditions.</p>
+
+                            <h3>Choosing Based on Your Goals</h3>
+                            <p>When selecting a bloodline for your Texas operation, consider these critical factors:</p>
+                            <ul>
+                                <li><strong>Climate Adaptation:</strong> All mentioned bloodlines handle Texas heat well, but Kelsos and Hatch birds show particular resilience to temperature extremes</li>
+                                <li><strong>Breeding Strategy:</strong> Decide between pure bloodline breeding for consistency vs. cross-breeding for hybrid vigor and combined traits</li>
+                                <li><strong>Experience Level:</strong> Kelsos and Roundheads are more forgiving for beginners, while Hatch birds require experienced handling and management</li>
+                                <li><strong>Available Space:</strong> More aggressive bloodlines need more separation and individual housing to prevent injuries</li>
+                                <li><strong>Market Demand:</strong> Research what bloodlines are most sought-after in your local Texas market before committing</li>
+                            </ul>
+
+                            <h3>Our Texas Bloodline Recommendations</h3>
+                            <p>After years of breeding in Texas conditions, we've found that starting with proven Kelso or Roundhead foundation stock gives new breeders the best chance of success. These bloodlines are forgiving, perform consistently, and provide excellent genetics for future breeding programs.</p>
+                            <p>For experienced breeders, incorporating Hatch or Sweater genetics through strategic crossing can produce exceptional offspring that combine the best traits of multiple bloodlines. Contact us to discuss which bloodline best matches your specific goals and facility setup.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content1', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 8 min read</span>
+                        <span>Essential Guide</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Care & Management</div>
+                    <div class="card-title">Complete Gamefowl Care Guide for Texas Breeders</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Master the fundamentals of gamefowl nutrition, housing, disease prevention, and health management. Specific tips for handling Texas heat and maintaining peak bird condition year-round.</p>
+                    
+                    <div class="card-content" id="content2">
+                        <div class="full-content">
+                            <h3>Foundation of Proper Gamefowl Care</h3>
+                            <p>Excellence in gamefowl breeding starts with exceptional daily care. Whether you're maintaining a small backyard flock or running a commercial breeding operation in Texas, consistent care practices determine the health, performance, and longevity of your birds.</p>
+
+                            <h3>Housing Requirements for Texas Climate</h3>
+                            <p>Texas presents unique challenges with extreme summer heat reaching 100°F+ and occasional winter freezes. Your housing setup must address both extremes while providing security and comfort year-round.</p>
+                            <ul>
+                                <li><strong>Ventilation is Critical:</strong> Texas summers demand excellent airflow. Install adjustable vents at multiple heights to create cross-breeze without creating drafts. Ridge vents and side windows should allow hot air to escape naturally while preventing rain entry.</li>
+                                <li><strong>Shade Structures:</strong> Provide 70-80% shade cloth over outdoor pens during summer months (May-September). Natural shade from trees is excellent but ensure they don't harbor predators or allow easy access to your birds.</li>
+                                <li><strong>Flooring Options:</strong> Sand provides excellent drainage and allows natural scratching behavior that keeps birds mentally stimulated. Clean sand weekly and completely replace monthly to prevent parasite buildup.</li>
+                                <li><strong>Individual Pens:</strong> Mature stags require individual housing measuring at least 3x3 feet minimum, though 4x4 is preferable. Breeding hens can be kept in small groups with 8-10 square feet per bird.</li>
+                                <li><strong>Winter Protection:</strong> While Texas winters are generally mild, provide windbreaks and supplemental heat sources when temperatures drop below 35°F. Use heat lamps carefully to prevent fire hazards.</li>
+                            </ul>
+
+                            <h3>Nutrition and Feeding Protocols</h3>
+                            <p>Proper nutrition is the cornerstone of gamefowl health and performance. Your feeding program should adapt to the bird's age, purpose, and season to maximize results.</p>
+                            <p><strong>Foundation Feed Program:</strong> Use a high-quality 20% protein game bird feed as your base ration. We recommend feeding twice daily—morning (7-8 AM) and evening (5-6 PM)—allowing birds to eat their fill within 15-20 minutes, then removing excess feed.</p>
+                            <p><strong>Protein Requirements by Stage:</strong></p>
+                            <ul>
+                                <li>Chicks (0-8 weeks): 24-28% protein starter feed for rapid growth</li>
+                                <li>Growers (8-16 weeks): 20-22% protein developer feed for steady development</li>
+                                <li>Maintenance adults: 16-18% protein for off-season</li>
+                                <li>Conditioning/Breeding: 20-24% protein with added supplements for peak performance</li>
+                            </ul>
+
+                            <h3>Water Management in Texas Heat</h3>
+                            <p>Clean, cool water is absolutely non-negotiable for Texas gamefowl operations. During brutal Texas summers, water temperatures can exceed 90°F in direct sunlight, which birds will refuse to drink, leading to rapid dehydration and heat stress.</p>
+                            <p>Change water at least twice daily during hot weather, more often during heat waves above 95°F. Add ice cubes to waterers during extreme heat to maintain cooler temperatures. Consider automatic watering systems for larger operations to ensure constant fresh water availability. Electrolyte supplements should be added during heat stress periods to prevent dehydration and maintain performance capacity.</p>
+
+                            <h3>Daily Health Monitoring</h3>
+                            <p>Develop a routine inspection schedule that becomes second nature. Morning feeding time is ideal for comprehensive health checks:</p>
+                            <ul>
+                                <li><strong>Observe behavior:</strong> Alert, active birds are healthy birds. Lethargy or isolation indicates problems</li>
+                                <li><strong>Check droppings:</strong> Should be firm with distinct white urates. Loose, bloody, or discolored droppings indicate health issues requiring immediate attention</li>
+                                <li><strong>Examine eyes:</strong> Bright, clear eyes indicate good health. Discharge, cloudiness, or swelling requires immediate veterinary evaluation</li>
+                                <li><strong>Feel body condition:</strong> Keel bone should have adequate muscle coverage without excessive fat deposits interfering with performance</li>
+                                <li><strong>Inspect feet and legs:</strong> Check daily for cuts, bumblefoot, scaly leg mites, or any swelling that could sideline a valuable bird</li>
+                            </ul>
+
+                            <h3>Seasonal Care Adjustments</h3>
+                            <p><strong>Summer Strategy (May-September):</strong> Focus primarily on heat stress prevention. Provide misters or sprinklers for cooling during peak afternoon heat (2-5 PM). Feed larger portions in cooler morning and evening hours when birds' appetites are stronger. Reduce handling and training during midday when heat stress risk is highest.</p>
+                            <p><strong>Winter Management (December-February):</strong> Increase feed portions by 10-15% to support thermoregulation and maintain body condition. Ensure dry bedding at all times and draft-free housing. Winter is an excellent time for intensive training as birds aren't stressed by heat.</p>
+
+                            <h3>Parasite Control Program</h3>
+                            <p>Texas's warm climate provides year-round ideal conditions for parasites. Implement a proactive control program rather than reactive treatment:</p>
+                            <ul>
+                                <li><strong>Internal parasites:</strong> Deworm every 8-12 weeks using rotation of different dewormers (Fenbendazole, Levamisole, Piperazine) to prevent resistance development</li>
+                                <li><strong>External parasites:</strong> Inspect weekly for mites and lice, especially around vent area. Dust birds and housing with poultry dust monthly as prevention</li>
+                                <li><strong>Maintain clean housing:</strong> Remove droppings at least twice weekly, complete coop cleanouts with disinfection monthly</li>
+                            </ul>
+
+                            <h3>Record Keeping for Success</h3>
+                            <p>Maintain detailed records for each bird including hatch date, parentage, weight tracking at key intervals, health treatments administered, and performance notes. This data becomes invaluable for making intelligent breeding decisions and identifying superior genetics in your flock over time.</p>
+                            <p>We provide all our customers with a comprehensive starter record-keeping template and ongoing support to ensure your breeding program's long-term success and genetic improvement.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content2', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 12 min read</span>
+                        <span>Beginner Friendly</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Breeding Strategy</div>
+                    <div class="card-title">How to Start Breeding American Gamefowl: A Step-by-Step Blueprint</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Everything you need to know before starting your gamefowl breeding operation. From selecting foundation stock to understanding genetics, breeding cycles, and record keeping for success.</p>
+                    
+                    <div class="card-content" id="content3">
+                        <div class="full-content">
+                            <h3>Step 1: Define Your Breeding Goals</h3>
+                            <p>Before purchasing your first bird, clearly define what you want to achieve. Are you breeding for personal satisfaction, building a commercial operation, or developing a specific bloodline? Your goals determine everything from facility size to initial investment and bloodline selection. Clarity at this stage prevents costly mistakes later.</p>
+
+                            <h3>Step 2: Select Quality Foundation Stock</h3>
+                            <p>Your foundation birds are your breeding program's genetic blueprint for generations to come. This is absolutely not the place to cut corners or seek bargains. Invest in proven genetics from reputable Texas breeders with documented bloodlines and track records.</p>
+                            <p><strong>What to Look for in Foundation Stock:</strong></p>
+                            <ul>
+                                <li><strong>Documented Pedigree:</strong> Insist on written records showing at least three generations of ancestry with specific bird identifiers</li>
+                                <li><strong>Physical Soundness:</strong> Strong leg structure, proper body weight for breed, clear eyes, glossy plumage, and overall vitality</li>
+                                <li><strong>Temperament:</strong> Confident without being overly aggressive toward handlers, easy to work with, showing proper gamefowl bearing</li>
+                                <li><strong>Age Consideration:</strong> Start with yearlings or two-year-olds who've proven their genetics but have many productive breeding years ahead</li>
+                                <li><strong>Proven Parentage:</strong> Whenever possible, purchase offspring from parents with successful documented offspring records</li>
+                            </ul>
+
+                            <h3>Step 3: Understand Basic Genetics</h3>
+                            <p>You don't need a PhD in genetics, but understanding fundamental inheritance principles prevents costly breeding mistakes that waste years of effort.</p>
+                            <p><strong>Key Genetic Concepts:</strong></p>
+                            <ul>
+                                <li><strong>Dominant vs. Recessive Traits:</strong> Certain characteristics like comb type, leg color, and feather patterns follow predictable inheritance patterns</li>
+                                <li><strong>Inbreeding vs. Line Breeding:</strong> Inbreeding (parent to offspring or sibling to sibling) intensifies both desirable and undesirable traits. Use carefully and only with superior birds. Line breeding (cousins, uncle to niece) is safer while still concentrating desired genetics.</li>
+                                <li><strong>Hybrid Vigor:</strong> Crossing unrelated bloodlines often produces first-generation offspring with superior health and performance, but second generation may show unpredictable trait combinations</li>
+                            </ul>
+
+                            <h3>Step 4: Set Up Proper Breeding Facilities</h3>
+                            <p>You'll need three distinct types of housing: breeding pens for active pairs, grow-out pens for developing young stock, and individual conditioning pens for mature stags. For a starter operation in Texas, plan for minimum:</p>
+                            <ul>
+                                <li>2-3 breeding pens (10x10 feet each) with comfortable nest boxes</li>
+                                <li>10-15 grow-out pens for young stags (3x3 feet minimum, 4x4 preferred)</li>
+                                <li>Group housing area for young hens before breeding age</li>
+                                <li>Dedicated quarantine area completely separate from main flock</li>
+                            </ul>
+
+                            <h3>Step 5: Master the Breeding Cycle</h3>
+                            <p>Texas's favorable climate allows year-round breeding, but spring (February-May) and fall (September-November) provide ideal temperature conditions for best fertility and hatch rates.</p>
+                            <p><strong>Complete Breeding Cycle:</strong></p>
+                            <ul>
+                                <li><strong>Preparation Phase (2-3 weeks):</strong> Condition breeding pairs with high-protein feed, ensure proper weight, and allow them to bond. Place one vigorous cock with 2-4 hens depending on his breeding capacity</li>
+                                <li><strong>Breeding Phase (4-6 weeks):</strong> Collect eggs daily, date them clearly, and store at 55-65°F with pointed end down. Turn stored eggs daily if not incubating immediately</li>
+                                <li><strong>Incubation (21 days):</strong> Use quality incubator at 99.5°F with 50-55% humidity for days 1-18, then increase to 65-70% humidity for final hatching days. Turn eggs 3-5 times daily for even development</li>
+                                <li><strong>Brooding Phase (6-8 weeks):</strong> Maintain brooder at 95°F week one, reducing temperature by 5°F weekly. Provide 24% protein starter feed and constant access to clean water</li>
+                            </ul>
+
+                            <h3>Step 6: Implement Rigorous Selection</h3>
+                            <p>Not every bird that hatches deserves to breed. Successful breeders cull ruthlessly based on strict criteria. Top Texas breeders keep only 20-30% of each hatch for serious breeding evaluation, culling the rest at 4-6 months of age.</p>
+
+                            <h3>Common Beginner Mistakes to Avoid</h3>
+                            <ul>
+                                <li>Breeding birds too young—wait until at least 10-12 months old for full maturity</li>
+                                <li>Poor record keeping—you'll forget critical lineages without detailed written records</li>
+                                <li>Overcrowding facilities—leads to stress, disease outbreaks, and fighting injuries</li>
+                                <li>Breeding inferior stock hoping offspring will improve—they won't</li>
+                                <li>Ignoring biosecurity—one disease outbreak can destroy years of breeding work</li>
+                            </ul>
+
+                            <p>We provide ongoing mentorship to all customers who purchase foundation stock from our Texas operation. Your long-term success is our success, and we're genuinely committed to helping you build a thriving, sustainable breeding program.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content3', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 10 min read</span>
+                        <span>Getting Started</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Training & Conditioning</div>
+                    <div class="card-title">Gamefowl Conditioning Secrets: Build Strength, Speed & Stamina</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Professional conditioning protocols used by top Texas breeders. Learn proper exercise routines, diet optimization, and training schedules to develop champion-quality birds.</p>
+                    
+                    <div class="card-content" id="content4">
+                        <div class="full-content">
+                            <h3>The Science of Peak Conditioning</h3>
+                            <p>Conditioning transforms genetically superior birds into peak performers. Like elite human athletes, gamefowl require systematic training to develop cardiovascular endurance, muscular strength, explosive power, and mental sharpness. Proper conditioning can mean the difference between a bird reaching its full genetic potential or falling disappointingly short.</p>
+
+                            <h3>Phase 1: Foundation Building (Weeks 1-3)</h3>
+                            <p>The first phase focuses on building cardiovascular base and general fitness without overstressing the bird. This is especially critical in Texas heat—conduct all training during cool morning hours before temperatures rise.</p>
+                            <p><strong>Daily Exercise Routine:</strong></p>
+                            <ul>
+                                <li><strong>Sparring Sessions:</strong> 5-10 minutes daily with carefully matched opponent. Use proper protective equipment and close supervision. Focus on teaching technique, not exhaustion</li>
+                                <li><strong>Free Flying:</strong> 20-30 minutes in a large fly pen encourages natural movement patterns and wing strength development</li>
+                                <li><strong>Treadmill Work:</strong> 10-15 minutes at moderate pace if using mechanical conditioner for controlled exercise</li>
+                            </ul>
+
+                            <h3>Phase 2: Strength Development (Weeks 4-6)</h3>
+                            <p>Increase intensity progressively to build fast-twitch muscle fiber and explosive power. Birds should now show noticeably improved stamina and eagerness for daily training sessions.</p>
+                            <p><strong>Advanced Training Protocol:</strong></p>
+                            <ul>
+                                <li><strong>Increased Sparring:</strong> 15-20 minutes per session, 5-6 days per week. Rotate opponents to expose bird to different fighting styles and maintain mental engagement</li>
+                                <li><strong>Hill Work:</strong> Create an inclined run area. 10-15 minutes of uphill work builds explosive leg strength dramatically</li>
+                                <li><strong>Weight Work:</strong> Attach light leg weights (no more than 2-3 oz) for short 5-minute sessions to build muscle density</li>
+                                <li><strong>Sprint Training:</strong> Short burst exercises in small pen—encourage explosive movement for 3-5 minute sessions</li>
+                            </ul>
+
+                            <h3>Texas Heat Management</h3>
+                            <p>Texas summers can completely derail even the most carefully planned conditioning program. Never train when temperatures exceed 85°F. Start all sessions at sunrise (5-7 AM) when conditions are coolest. Always have ice water and immediate cooling areas ready. A single heat-stressed training session can erase weeks of conditioning progress.</p>
+
+                            <h3>Nutrition for Peak Performance</h3>
+                            <p>Increase protein to 22-24% during heavy conditioning phases. Add hard-boiled eggs (3-4 per week) and small amounts of lean meat for complete amino acid profiles. Strategic supplementation supports conditioning:</p>
+                            <ul>
+                                <li><strong>B-Complex Vitamins:</strong> Support energy metabolism and stress response—add 3x per week</li>
+                                <li><strong>Electrolytes:</strong> Absolutely critical in Texas heat—daily during summer training</li>
+                                <li><strong>Amino Acids:</strong> Support muscle development and recovery—add to water 2x weekly during heavy training phases</li>
+                            </ul>
+
+                            <h3>Signs of Overtraining</h3>
+                            <p>Know when to back off immediately. Overtraining destroys months of careful work:</p>
+                            <ul>
+                                <li>Reluctance to engage in sparring sessions</li>
+                                <li>Weight loss despite adequate feeding</li>
+                                <li>Extended recovery times exceeding 15 minutes</li>
+                                <li>Dull eyes or listless behavior between sessions</li>
+                                <li>Decreased appetite or interest in food</li>
+                            </ul>
+
+                            <p>Our Texas breeding program produces birds with the genetic foundation for superior conditioning response. We provide detailed conditioning protocols customized to our specific bloodlines with every purchase. Your success is built on our proven methods refined over decades in challenging Texas conditions.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content4', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 9 min read</span>
+                        <span>Advanced Tips</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Health & Wellness</div>
+                    <div class="card-title">Common Gamefowl Diseases in Texas & How to Prevent Them</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Identify and prevent respiratory infections, coccidiosis, and other common health issues. Complete vaccination schedules and biosecurity practices to protect your flock investment.</p>
+                    
+                    <div class="card-content" id="content5">
+                        <div class="full-content">
+                            <h3>Prevention: Your First Line of Defense</h3>
+                            <p>An ounce of prevention is worth a pound of cure—nowhere is this more true than in gamefowl health management. Texas's warm, humid climate creates ideal conditions for many pathogens. A proactive health program protects your genetic investment and saves thousands in treatment costs and lost birds.</p>
+
+                            <h3>Essential Biosecurity Practices</h3>
+                            <p>Biosecurity prevents disease from entering your facility in the first place—the most cost-effective health strategy:</p>
+                            <ul>
+                                <li><strong>Quarantine Protocol:</strong> Isolate all new birds for minimum 30 days before introducing to your main flock. House at least 50 feet from main coops. Watch carefully for respiratory symptoms, abnormal droppings, or lethargy during this critical period</li>
+                                <li><strong>Visitor Management:</strong> Strictly limit access to your birds. Provide boot baths with disinfectant at all entry points. Never allow visitors who've been around other poultry operations that same day</li>
+                                <li><strong>Equipment Sanitation:</strong> Dedicate specific feeders, waterers, and tools to individual pens. Disinfect thoroughly between uses if equipment must be shared. Weekly deep cleaning with approved disinfectants prevents disease buildup</li>
+                                <li><strong>Rodent Control:</strong> Rats and mice spread disease and contaminate feed stores. Seal all feed storage areas, set effective traps, and remove debris that provides harborage for rodents</li>
+                                <li><strong>Wild Bird Exclusion:</strong> Net or cover all outdoor runs. Wild birds carry Newcastle disease, avian influenza, and numerous parasites that can devastate your flock</li>
+                            </ul>
+
+                            <h3>Respiratory Diseases: The #1 Texas Challenge</h3>
+                            <p><strong>Infectious Bronchitis (IB):</strong> Highly contagious viral infection causing coughing, nasal discharge, and dramatically reduced performance. Spreads rapidly through airborne transmission in close quarters.</p>
+                            <p><em>Symptoms:</em> Gasping, watery eyes, nasal discharge, reduced feed intake, rales (rattling breathing sounds), head shaking</p>
+                            <p><em>Prevention:</em> Vaccination at 1 day old and booster at 4 weeks is essential. Maintain excellent ventilation in all housing. Reduce stress during hot weather when birds are most vulnerable.</p>
+
+                            <p><strong>Mycoplasma (CRD - Chronic Respiratory Disease):</strong> Bacterial infection that becomes permanently established in flocks. Texas humidity significantly exacerbates this condition, making it a year-round threat.</p>
+                            <p><em>Symptoms:</em> Swollen sinuses, foamy eyes, frequent sneezing, slow progressive weight loss, decreased performance despite apparent good health</p>
+                            <p><em>Prevention:</em> Purchase only from certified Mycoplasma-negative flocks. Test all breeding stock annually. Administer preventive antibiotics in water during major stress periods.</p>
+
+                            <h3>Coccidiosis: The Silent Performance Killer</h3>
+                            <p>This parasitic disease damages intestinal lining, causing poor nutrient absorption and bloody diarrhea. Texas's warm soil temperatures maintain infective oocysts active year-round, creating constant exposure pressure.</p>
+                            <p><em>Symptoms:</em> Bloody droppings, severely ruffled feathers, hunched posture, rapid weight loss despite eating, pale combs indicating anemia</p>
+                            <p><em>Prevention Strategy:</em></p>
+                            <ul>
+                                <li>Use medicated starter feed containing Amprolium for all chicks 0-8 weeks of age</li>
+                                <li>Keep all pens absolutely dry—moisture activates dormant coccidia oocysts</li>
+                                <li>Remove wet bedding immediately after rain or waterer spills</li>
+                                <li>Administer preventive medication in water during stress periods or wet weather</li>
+                                <li>Build natural immunity through controlled exposure in young birds under supervision</li>
+                            </ul>
+
+                            <h3>Newcastle Disease: The Nightmare Scenario</h3>
+                            <p>Highly contagious viral disease that can devastate entire operations within days. Texas experienced serious outbreaks in 2018-2019 that destroyed thousands of valuable birds. This is a federally reportable disease—immediate quarantine legally required.</p>
+                            <p><em>Symptoms:</em> Sudden death without warning, neurological signs (twisted neck, paralysis), green diarrhea, severe respiratory distress, complete drop in egg production</p>
+                            <p><em>Prevention:</em> Vaccination is absolutely CRITICAL—not optional. Vaccinate at 2 weeks, 6 weeks, and then annually for all breeding stock. Strict biosecurity essential. Do not visit other poultry operations casually.</p>
+
+                            <h3>Internal Parasites (Worms)</h3>
+                            <p>Texas's year-round warmth means constant, relentless parasite pressure. Regular deworming is essential—not optional—for maintaining bird health and performance.</p>
+                            <p><strong>Comprehensive Deworming Protocol:</strong></p>
+                            <ul>
+                                <li>Deworm all birds every 8-12 weeks year-round in Texas climate</li>
+                                <li>Rotate dewormers: Use Fenbendazole (Safeguard), then Levamisole, then Piperazine in strict rotation to prevent drug resistance development</li>
+                                <li>Clean and move ground pens regularly to break parasite life cycles</li>
+                                <li>Conduct fecal testing twice yearly to accurately monitor parasite loads</li>
+                                <li>Treat all new birds during mandatory quarantine period before flock introduction</li>
+                            </ul>
+
+                            <h3>Vaccination Schedule for Texas Gamefowl</h3>
+                            <p>Follow this comprehensive protocol for all birds in your operation:</p>
+                            <ul>
+                                <li><strong>Day 1-3:</strong> Marek's disease vaccine (optional but strongly recommended for valuable breeding stock)</li>
+                                <li><strong>2 weeks:</strong> Newcastle + Infectious Bronchitis combination vaccine (first dose)</li>
+                                <li><strong>6 weeks:</strong> Newcastle + IB booster (critical for full immunity)</li>
+                                <li><strong>16 weeks:</strong> Fowl Pox vaccine using wing web method</li>
+                                <li><strong>Annually:</strong> Newcastle + IB booster for all breeding stock without exception</li>
+                            </ul>
+
+                            <h3>Essential First Aid Supplies</h3>
+                            <p>Keep these supplies stocked and readily accessible for emergencies:</p>
+                            <ul>
+                                <li>Antibiotic powder (Terramycin, Tylosin) for respiratory infections</li>
+                                <li>Electrolyte powder for heat stress and dehydration</li>
+                                <li>Coccidiostat (Amprolium/Corid) for treating outbreaks</li>
+                                <li>Wound spray (Blu-Kote) for injuries and pecking wounds</li>
+                                <li>Multiple types of deworming medications</li>
+                                <li>Poultry dust for external parasite control</li>
+                                <li>High-quality vitamins and probiotics</li>
+                                <li>Syringes and needles in various sizes</li>
+                                <li>Bandaging materials for wound management</li>
+                                <li>Digital thermometer for monitoring body temperature</li>
+                            </ul>
+
+                            <p>All birds from our Texas operation come fully vaccinated with complete, detailed health records. We provide ongoing health consultation to our customers and can recommend experienced avian veterinarians in your specific area. Your flock's health and longevity is our top priority.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content5', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 11 min read</span>
+                        <span>Health Focus</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Buyer's Guide</div>
+                    <div class="card-title">What to Look for When Buying Gamefowl: Expert Evaluation Tips</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Learn how to evaluate conformation, leg structure, body weight, and temperament. Avoid common mistakes and ensure you're investing in quality breeding stock from reputable Texas breeders.</p>
+                    
+                    <div class="card-content" id="content6">
+                        <div class="full-content">
+                            <h3>The High Cost of Poor Purchasing Decisions</h3>
+                            <p>Buying inferior birds wastes money, time, and precious breeding potential. A single purchase of quality foundation stock costs more upfront but saves thousands in the long run versus buying cheap birds that produce consistently disappointing offspring year after year.</p>
+
+                            <h3>Evaluating Physical Conformation</h3>
+                            <p><strong>Body Structure—The Frame Everything Builds On:</strong></p>
+                            <ul>
+                                <li><strong>Station (Posture):</strong> Proud, upright carriage at approximately 45-50 degree angle. Low-stationed birds lack proper leverage and power generation</li>
+                                <li><strong>Keel Bone:</strong> Straight and prominent with deep chest muscles on both sides. Run your fingers along the keel—should be perfectly even with no twists or curves</li>
+                                <li><strong>Back Line:</strong> Short, strong back that slopes slightly toward tail. Long backs indicate weak structure highly prone to injury under stress</li>
+                                <li><strong>Shoulder Width:</strong> Broad shoulders provide crucial attachment points for powerful chest muscles. Narrow shoulders severely limit muscle development potential</li>
+                            </ul>
+
+                            <h3>Leg Evaluation—Critical for Performance</h3>
+                            <p>Legs are a gamefowl's primary weapons and structural foundation. Poor leg structure cannot be corrected and will inevitably pass to all offspring:</p>
+                            <ul>
+                                <li><strong>Bone Diameter:</strong> Thickness matters significantly. Feel the bone—should be solid and substantial for body size. Thin bones break easily under combat stress</li>
+                                <li><strong>Straightness:</strong> From front view, legs should be perfectly vertical. Cow-hocked (knees pointing inward) or bow-legged birds lack stability and power</li>
+                                <li><strong>Spur Position:</strong> Well-set spurs positioned properly for effective striking. Should align naturally with foot angle</li>
+                                <li><strong>Foot Structure:</strong> Long toes with good spread provide balance and agility. Middle toe should be noticeably longest. Check carefully for bumblefoot or pad injuries</li>
+                            </ul>
+
+                            <h3>Head and Eye Assessment</h3>
+                            <p>The head reveals intelligence, health status, and overall breeding quality:</p>
+                            <ul>
+                                <li><strong>Eye Color:</strong> Bright, clear, and alert appearance. Yellow or pearl eyes typically show confidence. Avoid cloudy or dull eyes indicating health issues</li>
+                                <li><strong>Beak Structure:</strong> Short, thick, well-curved beak resembling a hawk. Strong beak structure indicates strong genetic line</li>
+                                <li><strong>Head Shape:</strong> Broad skull with good width between eyes. Pinhead (narrow skull) is a serious genetic fault</li>
+                            </ul>
+
+                            <h3>Weight and Muscle Evaluation</h3>
+                            <p>Pick up the bird and carefully assess:</p>
+                            <ul>
+                                <li><strong>Heft:</strong> Should feel solid and compact for size. Heavy bone and dense muscle, not excess fat</li>
+                                <li><strong>Chest Muscle:</strong> Feel the pectoral muscles on both sides of keel. Should be thick, firm, and symmetrical</li>
+                                <li><strong>Body Condition:</strong> Keel bone should have adequate muscle cover but be easy to palpate. If keel is knife-sharp, bird is too thin. If you can't feel keel easily, bird is overfat</li>
+                            </ul>
+
+                            <h3>Temperament Assessment</h3>
+                            <p>Temperament must appropriately match intended purpose:</p>
+                            <ul>
+                                <li><strong>Confidence:</strong> Bird should be alert and aware but not panicky when handled. Confidence is highly genetic and heritable</li>
+                                <li><strong>Handler Aggression:</strong> Different from gameness. Birds that attack handlers are dangerous and absolutely shouldn't breed. This serious fault passes directly to offspring</li>
+                                <li><strong>Appropriate Docility:</strong> Good breeding stock should be aggressive toward opponents but relatively calm with experienced handlers</li>
+                            </ul>
+
+                            <h3>Documentation and Pedigree</h3>
+                            <p>Serious, reputable breeders always provide comprehensive documentation:</p>
+                            <ul>
+                                <li><strong>Written Pedigree:</strong> Minimum three complete generations. Should include specific individual bird IDs, not just vague "Kelso line"</li>
+                                <li><strong>Health Records:</strong> Complete vaccination dates, deworming schedule, any health treatments administered</li>
+                                <li><strong>Performance Data:</strong> If available, detailed performance records of parents and siblings</li>
+                                <li><strong>Photos:</strong> Pictures of parents and grandparents whenever possible for visual verification</li>
+                            </ul>
+
+                            <h3>Red Flags—Walk Away Immediately</h3>
+                            <p>Some warning signs indicate serious problems you should avoid:</p>
+                            <ul>
+                                <li>Seller cannot or will not provide any pedigree information</li>
+                                <li>Birds housed in dirty, severely overcrowded conditions</li>
+                                <li>No quarantine or biosecurity practices evident anywhere</li>
+                                <li>Multiple birds showing obvious respiratory symptoms or poor condition</li>
+                                <li>Seller unwilling to let you handle and thoroughly examine birds closely</li>
+                                <li>Price seems too good to be true (it always is)</li>
+                                <li>High-pressure sales tactics or artificial must-buy-today urgency</li>
+                            </ul>
+
+                            <h3>The Texas Gamefowl Market Reality</h3>
+                            <p>Texas has both excellent breeders and unscrupulous sellers. Expect to pay $200-500 for quality stags from proven bloodlines. $100-200 for good pullets. $500-2000+ for proven breeding cocks with extensively documented offspring records.</p>
+                            <p>If someone offers "champion bloodline" stags for $50, you're buying culls or worse. True genetic quality always commands fair market prices.</p>
+
+                            <p>At our Texas operation, every bird comes with complete documentation, health guarantees, and our firm commitment to ongoing support. We encourage all potential buyers to spend substantial time evaluating our birds and asking detailed questions. Our reputation is built on consistently producing quality stock that exceeds expectations. Schedule a visit to see how serious, professional breeders operate.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content6', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 7 min read</span>
+                        <span>Buying Guide</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 7 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Nutrition Science</div>
+                    <div class="card-title">Best Feed & Supplements for Peak Gamefowl Performance</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Science-backed nutrition strategies for different life stages. Protein requirements, vitamin supplementation, and feeding schedules that maximize growth and maintain optimal health.</p>
+                    
+                    <div class="card-content" id="content7">
+                        <div class="full-content">
+                            <h3>Nutrition as the Foundation of Performance</h3>
+                            <p>Proper nutrition is the single most important factor in gamefowl development, health, and performance. You cannot out-train poor nutrition. Even birds with superior genetics will underperform without optimal feeding programs tailored to their specific life stage and purpose.</p>
+
+                            <h3>Understanding Protein Requirements</h3>
+                            <p>Protein is the building block of muscle, feathers, and overall body structure. Requirements vary dramatically by age and activity level:</p>
+                            <ul>
+                                <li><strong>Chicks (0-8 weeks):</strong> 24-28% protein for rapid growth and skeletal development. This is the most critical growth period</li>
+                                <li><strong>Growers (8-20 weeks):</strong> 18-20% protein for steady, consistent development without forcing excessive growth that weakens structure</li>
+                                <li><strong>Maintenance Adults:</strong> 16-18% protein during off-season when not breeding or conditioning</li>
+                                <li><strong>Conditioning Birds:</strong> 22-24% protein to support intense training and muscle development</li>
+                                <li><strong>Breeding Stock:</strong> 20-22% protein plus additional supplements for egg production and fertility</li>
+                            </ul>
+
+                            <h3>Essential Vitamins and Minerals</h3>
+                            <p><strong>Vitamin A:</strong> Critical for vision, immune function, and reproduction. Deficiency causes respiratory problems and poor fertility. Found in greens and quality feed.</p>
+                            <p><strong>B-Complex Vitamins:</strong> Support energy metabolism, nervous system function, and stress response. Water-soluble, so must be supplied regularly. Add to water 2-3 times weekly.</p>
+                            <p><strong>Vitamin D3:</strong> Essential for calcium absorption and strong bone development. Texas sunshine provides natural D3, but supplement during winter months or for birds in covered housing.</p>
+                            <p><strong>Vitamin E:</strong> Powerful antioxidant supporting immune function and reproduction. Works synergistically with selenium for optimal effect.</p>
+                            <p><strong>Calcium and Phosphorus:</strong> Must maintain proper 2:1 ratio for strong bones and eggshells. Provide oyster shell free-choice for breeding hens.</p>
+
+                            <h3>Feeding Schedules for Optimal Results</h3>
+                            <p><strong>Chicks (0-8 weeks):</strong> Free-choice access to 24-28% protein starter feed. Chicks should never run out of feed. Provide fresh feed 3-4 times daily to ensure palatability.</p>
+                            <p><strong>Growing Birds (8-20 weeks):</strong> Twice daily feeding—morning and evening. Allow birds to eat their fill within 20-25 minutes, then remove excess. This prevents obesity while ensuring adequate intake.</p>
+                            <p><strong>Adult Maintenance:</strong> Twice daily feeding with controlled portions. Amount varies by bird size, typically 3-4 ounces per bird per day split between feedings.</p>
+                            <p><strong>Conditioning Program:</strong> Increase portions by 15-20% and add supplemental protein sources. Feed three times daily during peak conditioning phases—morning, midday, and evening.</p>
+
+                            <h3>Supplement Strategies</h3>
+                            <p><strong>Hard-Boiled Eggs:</strong> Excellent complete protein source. Provide 1-2 eggs per week for growing birds, 3-4 weekly during heavy conditioning. Chop finely including shells for calcium.</p>
+                            <p><strong>Lean Meats:</strong> Beef heart, chicken liver, or lean beef provide complete amino acids. Feed small amounts (1-2 ounces) 2-3 times weekly during conditioning.</p>
+                            <p><strong>Greens:</strong> Finely chopped lettuce, spinach, or grass clippings provide vitamins and fiber. Offer daily in small amounts to prevent digestive upset.</p>
+                            <p><strong>Grains:</strong> Cracked corn, wheat, or oats provide energy. Limit to 20% of diet maximum—too much grain causes fat deposition without muscle building.</p>
+
+                            <h3>Water: The Forgotten Nutrient</h3>
+                            <p>Clean, fresh water is absolutely critical—birds can survive longer without food than without water. In Texas heat, water consumption doubles or triples. Change water minimum twice daily, three times during summer. Add electrolytes during heat waves above 95°F. Birds drink 2-3 times their feed weight in water daily.</p>
+
+                            <h3>Commercial Feed Selection</h3>
+                            <p>Choose high-quality game bird or turkey feeds over chicken feeds. Game bird formulations contain higher protein and better amino acid profiles. Look for feeds containing:</p>
+                            <ul>
+                                <li>Animal protein sources (fish meal, meat meal) not just plant proteins</li>
+                                <li>Added probiotics for digestive health</li>
+                                <li>Organic trace minerals (better absorption than inorganic forms)</li>
+                                <li>No fillers like rice hulls or excessive corn</li>
+                                <li>Fresh manufacturing date—feed loses nutritional value over time</li>
+                            </ul>
+
+                            <h3>Feeding for Specific Purposes</h3>
+                            <p><strong>Weight Gain Protocol:</strong> Increase feed quality and quantity. Add calorie-dense supplements like hard-boiled eggs and small amounts of healthy fats. Feed three times daily with free-choice access during middle feeding.</p>
+                            <p><strong>Weight Reduction Protocol:</strong> Reduce grain content, increase greens. Maintain protein levels to preserve muscle. Increase exercise while controlling portions—never starve birds to make weight.</p>
+                            <p><strong>Pre-Breeding Conditioning:</strong> Flush breeding pairs with high-quality feed and supplements 4-6 weeks before breeding season. Improves fertility, egg size, and chick vigor dramatically.</p>
+
+                            <h3>Storage and Feed Quality</h3>
+                            <p>Texas heat and humidity degrade feed rapidly. Store all feed in sealed containers in cool, dry locations. Never store feed longer than 2-3 months—vitamins degrade significantly over time. Discard any moldy, rancid, or pest-contaminated feed immediately—toxins can be fatal.</p>
+
+                            <h3>Signs of Nutritional Deficiency</h3>
+                            <p>Watch for these warning signs indicating dietary problems:</p>
+                            <ul>
+                                <li>Slow growth compared to siblings (protein deficiency)</li>
+                                <li>Leg weakness or crooked bones (calcium/vitamin D deficiency)</li>
+                                <li>Poor feather quality or slow molt (protein or vitamin deficiency)</li>
+                                <li>Pale combs (anemia from iron deficiency)</li>
+                                <li>Respiratory issues (vitamin A deficiency)</li>
+                                <li>Poor fertility or thin-shelled eggs (calcium/vitamin E deficiency)</li>
+                            </ul>
+
+                            <p>We provide detailed, customized feeding protocols for every bloodline we sell, accounting for that line's specific nutritional needs and growth patterns. Our feeding programs are developed over years of testing and refinement in Texas conditions to produce optimal results.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content7', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 10 min read</span>
+                        <span>Nutrition Focus</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 8 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Facility Setup</div>
+                    <div class="card-title">Building the Perfect Gamefowl Farm: Layout & Design for Texas Climate</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Design considerations for coops, fly pens, and breeding pens. Ventilation, shade structures, and predator protection specific to Texas conditions for a professional operation.</p>
+                    
+                    <div class="card-content" id="content8">
+                        <div class="full-content">
+                            <h3>Planning Your Facility Layout</h3>
+                            <p>Proper facility design is a one-time investment that pays dividends for decades. Poor layout creates daily headaches, increases disease risk, and limits your operation's growth potential. Take time to plan correctly before building anything permanent.</p>
+
+                            <h3>Site Selection Considerations</h3>
+                            <p><strong>Drainage:</strong> Absolutely critical in Texas where heavy rains can dump inches in hours. Site should slope gently for natural drainage. Avoid low spots where water pools. Standing water breeds mosquitoes and disease.</p>
+                            <p><strong>Wind Protection:</strong> Identify prevailing wind direction. Use existing structures, tree lines, or build windbreaks to reduce winter wind chill while allowing summer breeze for cooling.</p>
+                            <p><strong>Accessibility:</strong> Design for easy vehicle access for feed delivery, bird transport, and emergency situations. Winter mud or summer dust makes poor access miserable.</p>
+                            <p><strong>Predator Considerations:</strong> Assess local predator pressure—coyotes, hawks, raccoons, opossums, snakes. Site selection impacts predator control difficulty significantly.</p>
+
+                            <h3>Individual Stag Pens Design</h3>
+                            <p>Mature stags require individual housing to prevent fighting injuries and stress. Design specifications for Texas climate:</p>
+                            <ul>
+                                <li><strong>Size:</strong> Minimum 3x3 feet, 4x4 feet preferred. Height minimum 4 feet to allow full standing posture</li>
+                                <li><strong>Flooring:</strong> Sand floor 4-6 inches deep provides drainage and natural scratching. Alternative: raised wire floors with droppings boards</li>
+                                <li><strong>Roof:</strong> Metal roof with minimum 12-inch overhang for rain protection and shade. Light-colored roofing reflects heat</li>
+                                <li><strong>Ventilation:</strong> Upper vents on opposite walls create cross-ventilation. Adjustable to close during winter storms</li>
+                                <li><strong>Shade:</strong> 70-80% shade cloth over south and west sides during summer months (May-September)</li>
+                                <li><strong>Perches:</strong> 2x4 inch perch 18-24 inches high. Birds sleep elevated</li>
+                            </ul>
+
+                            <h3>Breeding Pen Specifications</h3>
+                            <p>Breeding pens house one cock with 2-4 hens, requiring more space than individual housing:</p>
+                            <ul>
+                                <li><strong>Size:</strong> 10x10 feet minimum, 12x12 feet preferred for four hens</li>
+                                <li><strong>Nest Boxes:</strong> Provide one box per two hens. 12x12x12 inch boxes filled with clean pine shavings. Place in darkest, quietest corner</li>
+                                <li><strong>Multiple Feeders:</strong> At least two feeding stations prevents dominant birds from blocking subordinates</li>
+                                <li><strong>Privacy:</strong> Solid walls between breeding pens prevent visual stress and fighting through barriers</li>
+                            </ul>
+
+                            <h3>Fly Pen Construction</h3>
+                            <p>Large exercise areas for conditioning and flock maintenance:</p>
+                            <ul>
+                                <li><strong>Dimensions:</strong> 20x30 feet minimum. Larger is always better for flight conditioning</li>
+                                <li><strong>Height:</strong> 8-10 feet tall allows natural flight patterns</li>
+                                <li><strong>Netting:</strong> 1-inch poultry netting or smaller prevents escape and predator entry. Check regularly for holes</li>
+                                <li><strong>Shade:</strong> Partial shade covering 50-60% of area. Natural trees ideal if available</li>
+                                <li><strong>Ground Cover:</strong> Grass or sand. Avoid bare dirt which becomes muddy mess or dust bowl</li>
+                            </ul>
+
+                            <h3>Water System Planning</h3>
+                            <p>Texas heat makes water management critical. Plan water system carefully:</p>
+                            <ul>
+                                <li><strong>Automatic Waterers:</strong> Consider automatic systems for large operations. Reduces labor and ensures constant fresh water</li>
+                                <li><strong>Shade for Waterers:</strong> Position all water stations in shade. Direct sun heats water above 90°F which birds refuse</li>
+                                <li><strong>Easy Access:</strong> Design for quick water changes without entering every pen. Time-consuming water systems reduce frequency of changes</li>
+                                <li><strong>Backup System:</strong> Have backup watering plan for pump failures or freeze events</li>
+                            </ul>
+
+                            <h3>Feed Storage Facility</h3>
+                            <p>Proper feed storage protects your investment and maintains feed quality:</p>
+                            <ul>
+                                <li><strong>Climate Control:</strong> Cool, dry storage extends feed life. Insulated building with ventilation prevents heat and moisture buildup</li>
+                                <li><strong>Rodent-Proof:</strong> Metal containers or sealed plastic bins. Elevate off ground on pallets</li>
+                                <li><strong>Organization:</strong> Label and date all feed. Rotate stock—use oldest first</li>
+                                <li><strong>Capacity:</strong> Store minimum 2-3 months supply to avoid running out</li>
+                            </ul>
+
+                            <h3>Predator Protection Strategies</h3>
+                            <p>Texas has abundant predators. Layered protection approach works best:</p>
+                            <ul>
+                                <li><strong>Secure Flooring:</strong> Hardware cloth (1/2 inch mesh) buried 12 inches deep around pen perimeters stops digging predators</li>
+                                <li><strong>Overhead Protection:</strong> Complete netting or solid roof prevents hawk attacks</li>
+                                <li><strong>Lock Systems:</strong> Predator-proof latches on all doors. Raccoons can open simple latches</li>
+                                <li><strong>Motion Lights:</strong> Motion-activated lighting deters nocturnal predators</li>
+                                <li><strong>Perimeter Fencing:</strong> 6-foot chain link with barbed wire top discourages coyotes</li>
+                            </ul>
+
+                            <h3>Quarantine and Hospital Area</h3>
+                            <p>Separate facility minimum 50 feet from main flock prevents disease spread:</p>
+                            <ul>
+                                <li><strong>Separate Equipment:</strong> Dedicated feeders, waterers, tools never shared with main flock</li>
+                                <li><strong>Easy Observation:</strong> Design allows monitoring without excessive handling</li>
+                                <li><strong>Treatment Capability:</strong> Space for isolation cages, medication administration, recovery monitoring</li>
+                                <li><strong>Sanitation:</strong> Concrete floor with drain for thorough disinfection between uses</li>
+                            </ul>
+
+                            <h3>Utility and Work Areas</h3>
+                            <p><strong>Preparation Room:</strong> Covered area with workbench, tool storage, sink with hot water. Space for equipment maintenance, bird handling, record keeping.</p>
+                            <p><strong>Refrigeration:</strong> Dedicated refrigerator for medication storage, egg holding, supplement storage requiring cool temperatures.</p>
+                            <p><strong>Lighting:</strong> Good lighting for early morning and evening work. Motion-activated saves electricity.</p>
+
+                            <h3>Electrical System Planning</h3>
+                            <p>Plan electrical needs before construction begins:</p>
+                            <ul>
+                                <li>GFCI protected outlets in all moisture-prone areas</li>
+                                <li>Sufficient circuits to prevent overloading</li>
+                                <li>Weatherproof outdoor rated fixtures and outlets</li>
+                                <li>Generator hookup capability for Texas storm season</li>
+                                <li>Timer controls for lights during breeding season</li>
+                            </ul>
+
+                            <h3>Expanding Your Operation</h3>
+                            <p>Design initial facility with expansion capability. Common expansion pattern:</p>
+                            <ul>
+                                <li><strong>Phase 1:</strong> 10-15 individual pens, 2-3 breeding pens, basic facilities</li>
+                                <li><strong>Phase 2:</strong> Add 10-15 more individual pens, second fly pen, improved water system</li>
+                                <li><strong>Phase 3:</strong> Additional breeding pens, automated feeding/watering, climate-controlled brooding facility</li>
+                            </ul>
+
+                            <h3>Budget Considerations</h3>
+                            <p>Starter facility (15 pens, basic amenities): $3,000-$5,000 if building yourself with quality materials. Professional installation: $8,000-$12,000.</p>
+                            <p>Cutting corners on initial construction costs more long-term through repairs, replacements, and lost birds. Invest in quality materials first time.</p>
+
+                            <p>We provide detailed facility plans and specifications to all our Texas customers. We've refined our designs over decades to handle Texas climate extremes while minimizing labor and maximizing bird health. Schedule a farm visit to see professional facility design in action.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content8', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 13 min read</span>
+                        <span>Infrastructure</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 9 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Genetics Deep Dive</div>
+                    <div class="card-title">Understanding Gamefowl Genetics: Line Breeding vs Cross Breeding</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Master breeding strategies to improve your bloodline. Genetic principles, inbreeding coefficients, and how to select breeding pairs that produce consistent, high-quality offspring.</p>
+                    
+                    <div class="card-content" id="content9">
+                        <div class="full-content">
+                            <h3>Genetics Fundamentals for Breeders</h3>
+                            <p>Understanding basic genetics separates successful breeders from those who produce inconsistent results. You don't need a biology degree, but grasping fundamental principles guides intelligent breeding decisions that compound over generations.</p>
+
+                            <h3>Inheritance Patterns in Gamefowl</h3>
+                            <p><strong>Simple Dominant Traits:</strong> Characteristics controlled by single genes where one dominant allele produces the trait. Examples include pea comb over single comb, dark legs over light legs. Breeding two birds with dominant trait produces predictable offspring.</p>
+                            <p><strong>Recessive Traits:</strong> Require two copies of recessive gene to express. Can hide for generations. Examples include certain color patterns, specific body structures. Both parents must carry gene for offspring to show trait.</p>
+                            <p><strong>Polygenic Traits:</strong> Most important performance characteristics—gameness, cutting ability, intelligence—are controlled by multiple genes working together. These traits show continuous variation and are harder to predict but respond to selection pressure over time.</p>
+
+                            <h3>Line Breeding Strategy</h3>
+                            <p>Line breeding is controlled inbreeding that concentrates desirable genes while minimizing negative effects. Most professional Texas breeders use line breeding as their primary strategy.</p>
+                            <p><strong>Common Line Breeding Patterns:</strong></p>
+                            <ul>
+                                <li><strong>Grandfather to Granddaughter:</strong> Safest form of line breeding. Concentrates grandfather's superior genetics while introducing some new genes through grandmother</li>
+                                <li><strong>Uncle to Niece:</strong> Similar safety to grandfather-granddaughter. Allows maintaining desired traits without excessive inbreeding</li>
+                                <li><strong>Cousin Matings:</strong> Mildest form of line breeding. Useful for maintaining type while introducing slight genetic diversity</li>
+                                <li><strong>Half-Sibling Matings:</strong> More intense than cousin breeding. Use only when both half-siblings show exceptional quality</li>
+                            </ul>
+
+                            <h3>Benefits of Line Breeding</h3>
+                            <ul>
+                                <li><strong>Consistency:</strong> Produces uniform offspring expressing family traits predictably</li>
+                                <li><strong>Trait Concentration:</strong> Accumulates desirable genes from superior ancestor across generations</li>
+                                <li><strong>Reveals Hidden Genes:</strong> Brings recessive traits to surface where they can be selected for or against</li>
+                                <li><strong>Brand Recognition:</strong> Establishes recognizable, consistent bloodline valued in marketplace</li>
+                            </ul>
+
+                            <h3>Line Breeding Risks</h3>
+                            <p>Line breeding concentrates bad genes along with good ones. Manage risks through:</p>
+                            <ul>
+                                <li><strong>Rigorous Culling:</strong> Remove any bird showing defects immediately. Don't make excuses—cull ruthlessly</li>
+                                <li><strong>Health Monitoring:</strong> Watch for declining fertility, smaller size, increased health problems indicating inbreeding depression</li>
+                                <li><strong>Outcross Planning:</strong> Keep unrelated lines available for occasional outcross when needed to restore vigor</li>
+                                <li><strong>Record Keeping:</strong> Track inbreeding coefficient to avoid excessive concentration</li>
+                            </ul>
+
+                            <h3>Cross Breeding Approach</h3>
+                            <p>Cross breeding combines two unrelated bloodlines to produce hybrid offspring. Texas breeders use crossing to combine desirable traits from different lines or restore vigor to overly line-bred stock.</p>
+                            <p><strong>Hybrid Vigor Benefits:</strong></p>
+                            <ul>
+                                <li><strong>Increased Growth Rate:</strong> First generation crosses often grow faster and larger than either parent line</li>
+                                <li><strong>Improved Health:</strong> Better disease resistance and general vitality</li>
+                                <li><strong>Enhanced Performance:</strong> Often show superior performance combining best traits of both parents</li>
+                                <li><strong>Fertility Boost:</strong> Higher fertility rates and better hatch rates than inbred parents</li>
+                            </ul>
+
+                            <h3>Cross Breeding Challenges</h3>
+                            <p><strong>Inconsistency in F2 Generation:</strong> First cross (F1) shows uniformity and hybrid vigor. Second generation (F2) splits into unpredictable combinations—some excellent, many mediocre. This is why established crossbreds must be carefully selected and then line bred to stabilize traits.</p>
+                            <p><strong>Loss of Breed Character:</strong> Crosses may lose distinctive characteristics of parent lines. Requires several generations of selection to stabilize desired type.</p>
+
+                            <h3>Selecting Breeding Pairs</h3>
+                            <p><strong>Complementary Mating:</strong> Pair birds where one's strength compensates other's weakness. Example: hen with excellent bone but average muscle paired with cock having exceptional muscle development.</p>
+                            <p><strong>Never Mate Two Birds With Same Fault:</strong> Most critical rule. Matching two birds both showing leg weakness produces offspring with severely compromised leg structure. Always compensate faults with strengths.</p>
+                            <p><strong>Breed the Best to the Best:</strong> Within complementary pairing framework, always use highest quality birds available. Average parents cannot produce exceptional offspring regardless of breeding strategy.</p>
+
+                            <h3>Pedigree Analysis Skills</h3>
+                            <p>Learn to read pedigrees effectively:</p>
+                            <ul>
+                                <li><strong>Identify Common Ancestors:</strong> Birds appearing multiple times in pedigree have outsized genetic influence</li>
+                                <li><strong>Assess Line Breeding Intensity:</strong> How many times key ancestor appears determines concentration level</li>
+                                <li><strong>Verify Performance Claims:</strong> Pedigree without performance data is incomplete. Demand documented results</li>
+                                <li><strong>Evaluate Balance:</strong> Best pedigrees show quality birds on both maternal and paternal sides, not just one superior ancestor</li>
+                            </ul>
+
+                            <h3>Generation Planning</h3>
+                            <p><strong>Foundation Generation (P):</strong> Select absolute best available birds from proven sources. This generation determines your program's genetic ceiling.</p>
+                            <p><strong>F1 Generation:</strong> Evaluate carefully. Keep only birds meeting or exceeding parent quality. Expect 20-30% to make grade for breeding consideration.</p>
+                            <p><strong>F2 and Beyond:</strong> Continue selection pressure. Each generation should show improvement in target traits or maintain plateau of excellence.</p>
+
+                            <h3>Breeding for Specific Traits</h3>
+                            <p><strong>Structural Traits:</strong> Leg structure, body type, keel straightness. Highly heritable—respond well to selection. Focus here first to establish solid foundation.</p>
+                            <p><strong>Performance Traits:</strong> Gameness, cutting ability, speed, intelligence. Moderate heritability—require more generations to improve but eventually respond to consistent selection pressure.</p>
+                            <p><strong>Production Traits:</strong> Egg production, fertility, hatchability. Generally lower heritability but still improvable through selection of best producers as breeding stock.</p>
+
+                            <h3>When to Outcross</h3>
+                            <p>Introduce new genetics when you observe:</p>
+                            <ul>
+                                <li>Declining fertility or hatch rates despite good management</li>
+                                <li>Reduced overall size or vigor across multiple hatches</li>
+                                <li>Increased frequency of genetic defects</li>
+                                <li>Performance plateau despite continued selection</li>
+                                <li>Desire to introduce specific trait your line lacks</li>
+                            </ul>
+
+                            <h3>Record Keeping for Genetic Improvement</h3>
+                            <p>Maintain detailed records enabling data-driven breeding decisions:</p>
+                            <ul>
+                                <li>Individual bird performance scores and measurements</li>
+                                <li>Complete pedigree diagrams showing all ancestors</li>
+                                <li>Offspring quality assessment for each breeding pair</li>
+                                <li>Health issues and genetic defects appearing in any line</li>
+                                <li>Inbreeding coefficients tracking relationship intensity</li>
+                            </ul>
+
+                            <p>We provide comprehensive genetic consultation to customers building serious breeding programs. Our bloodlines are documented through multiple generations with detailed performance records. We help you develop customized breeding strategies maximizing your specific goals and genetic resources.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content9', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 15 min read</span>
+                        <span>Advanced Breeding</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 10 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Legal & Compliance</div>
+                    <div class="card-title">Texas Gamefowl Laws: What Every Breeder Needs to Know in 2024</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Navigate Texas state regulations, local ordinances, and best practices for legal gamefowl breeding operations. Property requirements, zoning laws, and record-keeping obligations.</p>
+                    
+                    <div class="card-content" id="content10">
+                        <div class="full-content">
+                            <h3>Understanding Texas Gamefowl Regulations</h3>
+                            <p>Texas law distinguishes between gamefowl breeding and cockfighting. Breeding, raising, and selling gamefowl is completely legal in Texas. However, organizing or participating in cockfighting is prohibited under Texas Penal Code Section 42.105.</p>
+
+                            <h3>What is Legal in Texas</h3>
+                            <ul>
+                                <li><strong>Breeding and Raising:</strong> You may legally breed, raise, and maintain gamefowl on your property without restriction at the state level</li>
+                                <li><strong>Buying and Selling:</strong> Commercial sale of gamefowl and related equipment is legal business activity</li>
+                                <li><strong>Training and Conditioning:</strong> You may train and condition birds using approved methods</li>
+                                <li><strong>Shipping:</strong> Interstate commerce in gamefowl is legal when complying with agricultural transport regulations</li>
+                                <li><strong>Exhibitions:</strong> Bird shows and exhibitions for conformation judging are legal</li>
+                            </ul>
+
+                            <h3>What is Prohibited</h3>
+                            <ul>
+                                <li><strong>Cockfighting:</strong> Causing any cock to fight another is a Class A misdemeanor</li>
+                                <li><strong>Attending Fights:</strong> Being a spectator at cockfight is Class C misdemeanor</li>
+                                <li><strong>Possessing Equipment:</strong> Owning gaffs or similar fighting implements can be used as evidence of illegal activity</li>
+                                <li><strong>Venue Ownership:</strong> Owning or operating cockfighting premises is felony offense</li>
+                            </ul>
+
+                            <h3>Local Zoning Considerations</h3>
+                            <p>While state law permits gamefowl breeding, local ordinances may restrict or regulate poultry keeping:</p>
+                            <ul>
+                                <li><strong>City Limits:</strong> Many Texas cities restrict number of roosters allowed in residential areas. Some ban roosters entirely while allowing hens</li>
+                                <li><strong>HOA Restrictions:</strong> Homeowners associations may prohibit poultry regardless of city ordinances. Review covenants before purchasing property</li>
+                                <li><strong>Rural Exceptions:</strong> Most rural counties have no restrictions on gamefowl numbers. Confirm with county clerk</li>
+                                <li><strong>Commercial Zoning:</strong> Large-scale commercial breeding operations may require agricultural zoning designation and proper permits</li>
+                            </ul>
+
+                            <h3>Property Requirements</h3>
+                            <p><strong>Setback Requirements:</strong> Many jurisdictions require poultry housing be minimum distance from property lines and neighboring residences. Common requirements range from 50-300 feet depending on locality.</p>
+                            <p><strong>Noise Ordinances:</strong> Crowing roosters can violate noise ordinances in some areas. Position birds away from neighbors and use sound-dampening housing if in noise-sensitive areas.</p>
+                            <p><strong>Waste Management:</strong> Must properly manage manure and waste to prevent water contamination, odor complaints, and fly breeding. Composting systems or regular removal required.</p>
+
+                            <h3>Health Certificates and Transport</h3>
+                            <p><strong>Interstate Commerce:</strong> Shipping birds to other states requires health certificate from accredited veterinarian. Receiving state may have additional requirements—verify before shipping.</p>
+                            <p><strong>NPIP Certification:</strong> National Poultry Improvement Plan certification demonstrates flock is disease-free. Voluntary but increases buyer confidence and required for some commercial sales.</p>
+                            <p><strong>Transport Regulations:</strong> Commercial transport must comply with federal animal welfare regulations regarding ventilation, temperature control, and humane handling.</p>
+
+                            <h3>Business Licensing</h3>
+                            <p><strong>Sales Tax Permit:</strong> Texas breeders selling gamefowl must collect and remit state sales tax. Register with Texas Comptroller's office.</p>
+                            <p><strong>Business Structure:</strong> Consider LLC formation for liability protection if operating commercially. Consult attorney regarding appropriate structure.</p>
+                            <p><strong>Record Keeping:</strong> Maintain detailed sales records for tax purposes minimum seven years. Document all business expenses for deductions.</p>
+
+                            <h3>Liability Considerations</h3>
+                            <ul>
+                                <li><strong>Visitor Injuries:</strong> Property owners liable for injuries to visitors. Maintain liability insurance and post warning signs near bird pens</li>
+                                <li><strong>Escaped Birds:</strong> May be liable if escaped birds damage neighbor's property or injure people. Secure housing is legal requirement</li>
+                                <li><strong>Disease Transmission:</strong> Could be liable if poor biosecurity spreads disease to neighboring flocks. Follow industry standard biosecurity practices</li>
+                                <li><strong>Buyer Protection:</strong> Written sales agreements protect both parties. Include health guarantees, return policies, and terms clearly stated</li>
+                            </ul>
+
+                            <h3>Best Practices for Legal Compliance</h3>
+                            <ul>
+                                <li>Research local ordinances thoroughly before starting operation</li>
+                                <li>Maintain excellent relations with neighbors through good management</li>
+                                <li>Keep detailed records of all birds, sales, and breeding activity</li>
+                                <li>Never possess fighting implements or equipment that could suggest illegal activity</li>
+                                <li>Join reputable breeding associations for education and advocacy</li>
+                                <li>Obtain proper business licenses and maintain required insurance</li>
+                                <li>Follow all health regulations and maintain required certifications</li>
+                            </ul>
+
+                            <h3>Future Legal Landscape</h3>
+                            <p>Texas gamefowl breeding laws have remained stable, but breeders should stay informed about potential changes. Join Texas gamefowl associations that monitor legislation and advocate for breeder rights. Local ordinances change more frequently than state law—monitor city council meetings in your area.</p>
+
+                            <p><strong>Important Disclaimer:</strong> This information is educational only and not legal advice. Consult qualified attorney familiar with Texas agricultural law and your local ordinances for specific legal guidance regarding your situation.</p>
+
+                            <p>We help our Texas customers navigate legal requirements by providing proper documentation, health certificates, and guidance on compliance best practices. Operating legally protects your investment and ensures long-term success of your breeding program.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content10', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 8 min read</span>
+                        <span>Legal Guide</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 11 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Seasonal Care</div>
+                    <div class="card-title">Managing Gamefowl Through Texas Seasons: Summer Heat to Winter Cold</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Seasonal adjustments for feeding, housing, and health care. Protect your birds from extreme Texas weather while maintaining breeding schedules and optimal performance year-round.</p>
+                    
+                    <div class="card-content" id="content11">
+                        <div class="full-content">
+                            <h3>Texas Seasonal Challenges</h3>
+                            <p>Texas weather extremes test even experienced breeders. Summer temperatures regularly exceed 100°F while winter can bring occasional hard freezes. Successful year-round management requires anticipating seasonal challenges and implementing proactive strategies.</p>
+
+                            <h3>Summer Management (June-September)</h3>
+                            <p><strong>Heat Stress Prevention:</strong> Heat is the #1 summer killer of gamefowl in Texas. Birds cannot sweat and rely entirely on panting and behavioral cooling. When ambient temperature exceeds body temperature (106°F), birds cannot cool effectively.</p>
+                            <p><strong>Critical Summer Protocols:</strong></p>
+                            <ul>
+                                <li><strong>Shade Absolutely Essential:</strong> Provide 70-80% shade cloth over all outdoor areas. Direct sun exposure can be fatal within hours during heat waves</li>
+                                <li><strong>Water Management:</strong> Change water minimum 3x daily. Add ice cubes to waterers during peak heat. Birds drink 3-4x normal amounts during heat</li>
+                                <li><strong>Misting Systems:</strong> Install misters in pens for evaporative cooling. Run during hottest afternoon hours (2-5 PM)</li>
+                                <li><strong>Feeding Schedule:</strong> Feed early morning (5-6 AM) and late evening (8-9 PM) when temperatures are coolest. Birds won't eat during peak heat</li>
+                                <li><strong>Electrolytes Daily:</strong> Add to all water sources. Prevents dehydration and maintains electrolyte balance lost through panting</li>
+                                <li><strong>No Training:</strong> Suspend all conditioning and training when temperatures exceed 85°F. Heat stress can be fatal during exercise</li>
+                            </ul>
+
+                            <h3>Recognizing Heat Stress</h3>
+                            <p>Early intervention saves lives. Watch for these warning signs:</p>
+                            <ul>
+                                <li>Open-mouth panting with extended neck</li>
+                                <li>Wings held away from body</li>
+                                <li>Lethargy or reluctance to move</li>
+                                <li>Decreased feed consumption</li>
+                                <li>Pale comb color</li>
+                            </ul>
+                            <p><strong>Emergency Heat Stress Treatment:</strong> Immediately move bird to cool, dark area. Dip feet and legs in cool (not ice) water. Offer cool water with electrolytes. Never submerge entire bird—shock can be fatal. Seek veterinary help if bird doesn't improve within 30 minutes.</p>
+
+                            <h3>Fall Transition (October-November)</h3>
+                            <p>Best time of year for Texas gamefowl breeding. Moderate temperatures, birds recovering from summer stress, excellent for breeding and conditioning programs.</p>
+                            <p><strong>Fall Strategies:</strong></p>
+                            <ul>
+                                <li><strong>Peak Conditioning:</strong> Ideal weather for intensive training programs. Birds perform best in 60-75°F range</li>
+                                <li><strong>Breeding Season:</strong> Set up breeding pens. Fall-hatched chicks avoid worst summer heat during vulnerable early weeks</li>
+                                <li><strong>Health Boost:</strong> Deworm all birds. Administer annual vaccines. Prepare birds for winter</li>
+                                <li><strong>Facility Maintenance:</strong> Repair housing, replace worn equipment before winter weather arrives</li>
+                            </ul>
+
+                            <h3>Winter Management (December-February)</h3>
+                            <p>Texas winters are generally mild but occasional hard freezes require preparation. Most healthy gamefowl tolerate cold well but require protection from wind and precipitation.</p>
+                            <p><strong>Winter Housing Adjustments:</strong></p>
+                            <ul>
+                                <li><strong>Wind Protection:</strong> Block north and west sides of pens with tarps or plywood during cold snaps. Maintain ventilation to prevent moisture buildup</li>
+                                <li><strong>Dry Bedding Critical:</strong> Wet bedding combined with cold causes illness. Change bedding more frequently during wet winter weather</li>
+                                <li><strong>Supplemental Heat:</strong> Use heat lamps only when temperatures drop below 35°F. Position safely to prevent fire hazards</li>
+                                <li><strong>Water Management:</strong> Check water multiple times daily during freezes. Use heated bases or change frozen water frequently</li>
+                                <li><strong>Feed Increase:</strong> Birds require 10-15% more calories during cold weather for thermoregulation. Increase portions accordingly</li>
+                            </ul>
+
+                            <h3>Winter Health Monitoring</h3>
+                            <p>Cold stress combined with wet conditions creates ideal environment for respiratory disease:</p>
+                            <ul>
+                                <li>Watch for coughing, sneezing, nasal discharge indicating respiratory infection</li>
+                                <li>Monitor for frostbite on combs and wattles during hard freezes</li>
+                                <li>Check feet for injuries from frozen ground</li>
+                                <li>Maintain excellent ventilation while blocking wind—balance is critical</li>
+                            </ul>
+
+                            <h3>Spring Preparation (March-May)</h3>
+                            <p>Second ideal breeding season for Texas. Weather warming but not yet brutal. Excellent for hatching chicks that mature before peak summer heat.</p>
+                            <p><strong>Spring Management Tasks:</strong></p>
+                            <ul>
+                                <li><strong>Breeding Pairs:</strong> Flush breeding pairs with high-protein diet 3-4 weeks before pairing. Improves fertility and egg quality</li>
+                                <li><strong>Facility Prep:</strong> Deep clean all housing. Disinfect thoroughly. Repair shade structures before summer</li>
+                                <li><strong>Parasite Control:</strong> Deworm all birds. Treat for external parasites as temperatures rise</li>
+                                <li><strong>Conditioning Ramp-Up:</strong> Increase training intensity while weather still moderate. Birds should reach peak conditioning before summer heat forces reduction</li>
+                            </ul>
+
+                            <h3>Year-Round Biosecurity</h3>
+                            <p>Seasonal changes affect disease pressure:</p>
+                            <ul>
+                                <li><strong>Summer:</strong> Increased parasite loads. More frequent treatment required</li>
+                                <li><strong>Fall:</strong> Wild bird migration increases disease exposure. Strengthen biosecurity</li>
+                                <li><strong>Winter:</strong> Respiratory disease risk peaks. Monitor closely, treat aggressively</li>
+                                <li><strong>Spring:</strong> Breeding season stress increases disease susceptibility. Maintain excellent nutrition</li>
+                            </ul>
+
+                            <h3>Breeding Schedule Optimization</h3>
+                            <p><strong>Best Breeding Windows:</strong> March-May and September-November provide optimal conditions. Chicks hatched these periods face less weather stress during critical first 8 weeks.</p>
+                            <p><strong>Avoid:</strong> June-August hatches struggle with heat during vulnerable early development. December-February hatches face cold stress and reduced growth rates.</p>
+
+                            <h3>Record Keeping Through Seasons</h3>
+                            <p>Track seasonal patterns in your operation:</p>
+                            <ul>
+                                <li>Hatch rates by season—adjust breeding schedule to maximize success</li>
+                                <li>Growth rates seasonal variation—understand normal patterns</li>
+                                <li>Health issues by season—anticipate problems before they arise</li>
+                                <li>Performance peaks—schedule conditioning programs for optimal weather windows</li>
+                            </ul>
+
+                            <p>We provide season-specific management protocols to all our Texas customers. Our birds are raised in these same extreme conditions and we share decades of experience managing through Texas seasonal challenges. Your birds' year-round health and performance is our commitment.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content11', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 9 min read</span>
+                        <span>Seasonal Guide</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 12 -->
+            <div class="blog-card">
+                <div class="card-header">
+                    <div class="card-category">Success Stories</div>
+                    <div class="card-title">From Beginner to Pro: Real Texas Gamefowl Breeding Success Stories</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-excerpt">Learn from experienced Texas breeders who built successful operations. Common mistakes to avoid, breakthrough moments, and practical advice for accelerating your breeding program.</p>
+                    
+                    <div class="card-content" id="content12">
+                        <div class="full-content">
+                            <h3>Success Story #1: From Backyard Hobby to Commercial Operation</h3>
+                            <p><strong>Background:</strong> Carlos from San Antonio started with three Kelso hens and one cock purchased from our operation in 2018. No prior poultry experience. Budget: $1,500 total investment including birds and basic housing.</p>
+                            <p><strong>First Year Challenges:</strong> "I lost half my first hatch to coccidiosis because I didn't understand prevention," Carlos admits. "That painful lesson taught me disease prevention is non-negotiable. I got serious about biosecurity and medication protocols immediately."</p>
+                            <p><strong>Breakthrough Moment:</strong> Carlos's dedication to rigorous selection paid off in year two. "I culled 70% of my birds that first year. Everyone thought I was crazy. But keeping only the absolute best meant my second generation was dramatically better than my foundation stock."</p>
+                            <p><strong>Current Status:</strong> Five years later, Carlos maintains 40 breeding pens and sells 300+ birds annually. His Kelso line is recognized across Texas for consistency and quality. Annual revenue: $35,000-50,000.</p>
+                            <p><strong>Key Advice:</strong> "Start small, select hard, and keep detailed records. Every bird tells you something if you're paying attention. Don't expand until you've mastered the basics with a small flock."</p>
+
+                            <h3>Success Story #2: Overcoming Health Disasters</h3>
+                            <p><strong>Background:</strong> Jennifer from East Texas inherited 50 mixed-bloodline birds when her uncle passed. Birds had respiratory issues, parasites, and poor documentation.</p>
+                            <p><strong>The Crisis:</strong> Within three months, 15 birds died from Mycoplasma outbreak. "I almost quit," Jennifer says. "It was devastating financially and emotionally."</p>
+                            <p><strong>The Turnaround:</strong> Jennifer consulted veterinarian, implemented aggressive treatment protocol, and culled all symptomatic birds. "I had to depopulate and start over with clean, certified stock. Painful but necessary."</p>
+                            <p><strong>Lessons Learned:</strong> "Buy from reputable breeders with health certifications. Quarantine religiously—no exceptions. One infected bird can destroy years of work. Biosecurity isn't optional; it's everything."</p>
+                            <p><strong>Current Status:</strong> Jennifer now runs one of East Texas's most respected Roundhead breeding operations. Her strict health protocols mean customers trust her birds are disease-free.</p>
+
+                            <h3>Success Story #3: Genetics-Focused Breeding Program</h3>
+                            <p><strong>Background:</strong> Michael from Houston brought engineering mindset to gamefowl breeding. Started with elite foundation stock from three different Texas breeders, investing $5,000 in initial birds.</p>
+                            <p><strong>Methodology:</strong> "I treated it like a data problem," Michael explains. "I measured everything—weight at 8, 12, 16, 20 weeks. Leg bone diameter. Chest depth. Station angle. I built a database tracking every variable across generations."</p>
+                            <p><strong>Results:</strong> Michael's data-driven approach identified which breeding pairs consistently produced superior offspring. "Within three generations, I knew exactly which genetic combinations worked. My selection accuracy improved from maybe 30% to over 80%."</p>
+                            <p><strong>The Insight:</strong> "Most breeders rely on memory and intuition. Nothing wrong with that, but adding systematic data collection multiplies your progress rate. You spot patterns invisible to casual observation."</p>
+                            <p><strong>Current Status:</strong> Michael's Hatch-Kelso crosses are in high demand across Texas. His scientific approach appeals to serious breeders wanting predictable, documented genetics. He publishes his breeding data openly, building trust and reputation.</p>
+                            <p><strong>Key Advice:</strong> "Record everything. Photograph every bird. Weigh them consistently. Track which pairings produce which results. Your records become more valuable than the birds themselves over time."</p>
+
+                            <h3>Common Mistakes All Three Avoided (Eventually)</h3>
+                            <p><strong>Expanding Too Fast:</strong> All three initially wanted to grow quickly. Each learned that mastering small numbers before scaling prevented expensive mistakes at larger scale.</p>
+                            <p><strong>Breeding Inferior Stock:</strong> Early tendency to keep marginal birds "hoping they'd breed better" wasted time. Ruthless culling accelerated improvement dramatically.</p>
+                            <p><strong>Poor Record Keeping:</strong> All three started with inadequate records. Each independently concluded detailed documentation is non-negotiable for serious breeding.</p>
+                            <p><strong>Ignoring Biosecurity:</strong> Each experienced health disaster that could have been prevented. Now all three maintain strict biosecurity as their #1 priority.</p>
+
+                            <h3>Success Story #4: Part-Time Breeding for Supplement Income</h3>
+                            <p><strong>Background:</strong> Robert works full-time as electrician in Dallas. Wanted additional income without quitting day job. Started with 6 breeding pens on his 2-acre property.</p>
+                            <p><strong>Time Management:</strong> "I work my birds before and after work—6 AM and 6 PM daily. Weekends for deep cleaning and maintenance. It's manageable with efficient systems."</p>
+                            <p><strong>Revenue Strategy:</strong> Rather than competing in crowded market, Robert specializes in started stags (4-6 months old). "Most breeders sell chicks or mature birds. Started stags fill a gap—buyers see what they're getting but don't pay mature bird prices."</p>
+                            <p><strong>Results:</strong> Robert produces 60-80 started stags annually, selling for $150-200 each. Annual supplemental income: $10,000-15,000. "It's not getting rich money, but it funds my kids' college savings and gives me satisfaction breeding quality birds."</p>
+                            <p><strong>Key Advice:</strong> "You don't need to quit your job to breed successfully. Start small, be efficient, and find your market niche. My electrician skills helped me build excellent facilities cheaply—use whatever advantages you have."</p>
+
+                            <h3>Success Story #5: Overcoming Limited Space</h3>
+                            <p><strong>Background:</strong> Maria lives on half-acre lot in suburban San Antonio. Strict HOA limits and close neighbors seemed like insurmountable obstacles.</p>
+                            <p><strong>Creative Solutions:</strong> Maria researched local ordinances thoroughly. "My city allows up to 6 roosters on half-acre if properly housed. I built sound-dampened pens using double-wall construction with insulation. Zero complaints from neighbors in three years."</p>
+                            <p><strong>Focused Strategy:</strong> Rather than breeding for sales, Maria focuses on preserving rare Sweater bloodline for her own satisfaction. "I'm not trying to get rich. I maintain small, elite breeding group and enjoy the hobby."</p>
+                            <p><strong>Community Relations:</strong> "I took cakes to all my neighbors when I started, explained what I was doing, gave them my cell number for any concerns. Open communication prevented problems before they started."</p>
+                            <p><strong>Key Advice:</strong> "Don't let limited space discourage you. Small operations can produce excellent quality. Focus on perfecting a few birds rather than maintaining large numbers you can't properly care for."</p>
+
+                            <h3>Universal Success Principles</h3>
+                            <p>All successful breeders we interviewed shared these characteristics:</p>
+                            <ul>
+                                <li><strong>Patience:</strong> Building quality bloodline takes 3-5 years minimum. No shortcuts exist</li>
+                                <li><strong>Dedication to Learning:</strong> Constantly reading, networking with experienced breeders, attending shows and sales</li>
+                                <li><strong>Financial Discipline:</strong> Investing profits back into operation—better facilities, superior genetics, proper veterinary care</li>
+                                <li><strong>Rigorous Selection:</strong> Willingness to cull aggressively even when emotionally attached to birds</li>
+                                <li><strong>Detailed Records:</strong> Documentation enabling data-driven decisions rather than guesswork</li>
+                                <li><strong>Biosecurity Priority:</strong> Never compromising on disease prevention regardless of convenience cost</li>
+                                <li><strong>Reputation Focus:</strong> Understanding that breeding reputation takes years to build and one mistake to destroy</li>
+                            </ul>
+
+                            <h3>Realistic Timeline Expectations</h3>
+                            <p><strong>Year 1:</strong> Learning fundamentals, making mistakes, establishing basic systems. Most breeders lose money first year while learning.</p>
+                            <p><strong>Year 2-3:</strong> Improving selection skills, first generation showing results of your breeding decisions, breaking even financially if managing well.</p>
+                            <p><strong>Year 4-5:</strong> Established reputation, consistent quality production, positive cash flow if operating commercially.</p>
+                            <p><strong>Year 5+:</strong> Mature operation with proven genetics, loyal customer base, predictable results and income.</p>
+
+                            <h3>Breakthrough Insights from Successful Breeders</h3>
+                            <p><strong>"Start with the absolute best genetics you can afford."</strong> - Unanimous advice. Every dollar saved buying cheap foundation stock costs ten dollars in lost time and inferior offspring.</p>
+                            <p><strong>"Health problems bankrupt breeding operations faster than anything else."</strong> - Disease prevention through biosecurity is the highest return investment you can make.</p>
+                            <p><strong>"Your reputation is your most valuable asset."</strong> - Honest dealings, quality birds, and standing behind your genetics builds word-of-mouth that no advertising can match.</p>
+                            <p><strong>"Join the community."</strong> - Successful breeders network with others, attend shows, participate in associations. Isolation limits learning and growth.</p>
+
+                            <h3>Advice for Complete Beginners</h3>
+                            <ul>
+                                <li>Start with 2-3 breeding trios maximum. Master small numbers first</li>
+                                <li>Buy from established, reputable breeders willing to mentor you</li>
+                                <li>Invest in proper facilities before buying birds—good housing prevents problems</li>
+                                <li>Budget for veterinary care, medications, and unexpected expenses</li>
+                                <li>Keep meticulous records from day one—you'll thank yourself in three years</li>
+                                <li>Plan for 3-5 year timeline before seeing significant results</li>
+                                <li>Join local breeder associations for education and networking</li>
+                                <li>Visit multiple established operations to see different approaches</li>
+                                <li>Read extensively—books, forums, scientific poultry literature</li>
+                                <li>Accept that mistakes are tuition—learn from them and improve</li>
+                            </ul>
+
+                            <h3>The Reality of Success</h3>
+                            <p>Every successful breeder we interviewed emphasized that gamefowl breeding rewards dedication more than talent. "You don't need to be genius," Carlos explains. "You need to be consistent, patient, willing to learn from mistakes, and absolutely committed to doing things right even when shortcuts tempt you."</p>
+                            <p>Success isn't overnight. It's built through hundreds of small decisions—culling that marginal bird instead of keeping it, maintaining biosecurity when you're tired, recording data you don't feel like recording, investing in better genetics when budget is tight. These accumulated decisions compound over years into recognized reputation and quality bloodline.</p>
+
+                            <p>We're proud that many of our most successful customer breeders started with foundation stock from our Texas operation. We provide not just quality genetics but mentorship, ongoing support, and connection to community of serious breeders. Your success validates our commitment to the breed and to developing next generation of excellent Texas gamefowl breeders.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn" onclick="toggleContent('content12', this)">Read Full Article</button>
+                    
+                    <div class="card-meta">
+                        <span class="read-time">📖 11 min read</span>
+                        <span>Inspiration</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Gamefowl Journey?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                Premium American Gamefowl Breeding Stock Available Now
+            </p>
+            <a href="index.html#roosters" class="cta-button">View Available Birds</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Texas Premier Gamefowl Breeders | Expert American Gamefowl Since [Year]</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+                Quality Breeding Stock | Expert Guidance | Texas Proud
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleContent(contentId, button) {
+            const content = document.getElementById(contentId);
+            const isExpanded = content.classList.contains('expanded');
+            
+            if (isExpanded) {
+                content.classList.remove('expanded');
+                button.textContent = 'Read Full Article';
+                // Smooth scroll back to button
+                setTimeout(() => {
+                    button.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+            } else {
+                content.classList.add('expanded');
+                button.textContent = 'Show Less';
+                // Small delay to let animation start, then scroll to make content visible
+                setTimeout(() => {
+                    content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 200);
+            }
+        }
+    </script>
+    </body>
+    </html>
