@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Gamefowl Farm Guidance</title>
+
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            line-height: 1.6; }
+  /* FORM WRAPPER */
+.container {
+    max-width: 600px;
+    background: rgba(181, 25, 25, 0.05);
+    backdrop-filter: blur(12px);
+    padding: 35px;
+    margin: 40px auto;
+    border-radius: 18px;
+    border: 1px solid rgba(233, 69, 96, 0.3);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    color: #fff;
+    box-sizing: border-box; /* ensures padding doesn't break layout */
+}
+
+/* HEADERS */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #e94560;
+    text-shadow: 0 0 10px rgba(233, 69, 96, 0.3);
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(240, 235, 235);
+}
+
+/* LABELS */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: #4ecca3;
+}
+
+/* FIX FORM FIELD WIDTHS */
+input,
+select,
+textarea {
+    width: 100%;                /* ALL fields identical width */
+    box-sizing: border-box;     /* prevents overflow to right edge */
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(233, 69, 96, 0.3);
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(235, 232, 232);
+    outline: none;
+    transition: 0.3s ease;
+    margin-bottom: 10px;        /* spacing between fields */
+}
+
+/* PLACEHOLDER COLOR */
+input::placeholder,
+textarea::placeholder {
+    color: #bbb;
+}
+
+/* FOCUS STATE */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e94560;
+    box-shadow: 0 0 10px rgba(233, 69, 96, 0.4);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: linear-gradient(135deg, #e94560 0%, #d63651 100%);
+    border: 2px solid #e94560;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+/* SWIPE LIGHT */
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #d63651 0%, #c02a43 100%);
+    border-color: #fff;
+    box-shadow: 0 8px 25px rgba(233, 69, 96, 0.6);
+}
+
+option {
+        color: black;
+    }
+
+/* MOBILE FIX */
+@media(max-width: 480px) {
+    .container {
+        padding: 25px;
+    }
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+.home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);
+    box-shadow: 0 6px 20px rgba(14, 13, 13, 0.6);
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <a href="index.html" class="home-btn">← Home</a>
+
+  <div class="container">
+    <h1>Personalized Guidance Request</h1>
+    <p>
+      Tell us about your new farm or breeding program.  
+      We’ll review your details and send personalized guidance to help you build a successful start.
+    </p>
+
+    <!-- FORM -->
+    <form id="guidanceForm" style="color: black;">
+
+      <!-- FormSubmit options -->
+      <input type="hidden" name="_to" value="AvilaFarmUSA@proton.me">
+      <input type="hidden" name="_subject" value="New Gamefowl Farm Guidance Request">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="caption" value="gamefowl farm guidance request">
+    
+      <label>Your Name</label>
+      <input type="text" name="Name" required>
+    
+      <label>Email Address</label>
+      <input type="email" name="Email" required>
+    
+      <label>Location (Country/State)</label>
+      <input type="text" name="Location">
+    
+      <label>Are you starting a:</label>
+      <select name="Type_of_Program" required>
+        <option value="">Select...</option>
+        <option value="New Farm">New Farm</option>
+        <option value="Breeding Program">Breeding Program</option>
+        <option value="Both">Both</option>
+      </select>
+    
+      <label>Tell us about your goals</label>
+      <textarea name="Goals" placeholder="Describe your vision, current stock (if any), and what kind of support you need..." required></textarea>
+    
+      <label>Experience Level</label>
+      <select name="Experience_Level" required>
+        <option value="">Select...</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+    
+      <label>Additional Notes or Questions</label>
+      <textarea name="Additional_Notes"></textarea>
+    
+      <button type="submit">Submit Request</button>
+    
+      <!-- Inline confirmation message -->
+      <div id="guidanceMessage" style="margin-top: 10px; font-weight: 600;"></div>
+    </form>
+    
+    <script>
+    const guidanceForm = document.getElementById('guidanceForm');
+    const guidanceMessage = document.getElementById('guidanceMessage');
+    
+    guidanceForm.addEventListener('submit', async function(e) {
+      e.preventDefault(); // prevent redirect
+    
+      const formData = new FormData(guidanceForm);
+      guidanceMessage.innerText = '';
+      guidanceMessage.style.color = '';
+    
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/AvilaFarmUSA@proton.me', {
+          method: 'POST',
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success === 'true' || data.success === true) {
+          guidanceMessage.innerText =
+            '✅ Thank you! Your guidance request has been received. Our team will review your goals and contact you shortly.';
+          guidanceMessage.style.color = '#5eead4'; // success green/teal
+          guidanceForm.reset();
+        } else {
+          guidanceMessage.innerText = '❌ Submission failed. Please try again.';
+          guidanceMessage.style.color = '#ff6b81'; // error red
+        }
+    
+      } catch (error) {
+        console.error(error);
+        guidanceMessage.innerText = '⚠️ Network error. Please try again later.';
+        guidanceMessage.style.color = '#ff6b81';
+      }
+    
+      // Clear after 1 minute
+      setTimeout(() => {
+        guidanceMessage.innerText = '';
+      }, 60000);
+    });
+    </script>
+    
+  </div>
+</body>
+</html>
