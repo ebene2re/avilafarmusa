@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Shipping Quote - Avila Farm USA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #0a0a0a;
+            min-height: 100vh;
+        }
+
+        .home-btn {
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+            color: white;
+            padding: 0.4rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgb(18, 18, 18);
+            transition: all 0.3s ease;
+        }
+
+        .home-btn:hover {
+            box-shadow: 0 6px 20px rgba(255, 71, 87, 0.6);
+            background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);
+        }
+
+        .header {
+            background: linear-gradient(135deg, rgba(255, 71, 87, 0.15) 0%, rgba(255, 107, 129, 0.15) 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 5rem;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 L50 50 L0 100 L100 100 L50 50 L100 0 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: 100px 100px;
+            opacity: 0.3;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -2rem auto 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .quote-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-top: 4px solid #ff4757;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .benefit-item {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #5eead4;
+            text-align: center;
+        }
+
+        .benefit-item .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-item h3 {
+            color: #5eead4;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-item p {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+        }
+
+        .form-section {
+            background: #2a2a2a;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #3a3a3a;
+        }
+
+        .form-section h2 {
+            color: #ff4757;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #ff6b81;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            background: #1a1a1a;
+            border: 2px solid #3a3a3a;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff4757;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #5eead4 0%, #14b8a6 100%);
+            color: #134e4a;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(94, 234, 212, 0.4);
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(94, 234, 212, 0.6);
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: white;
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(94, 234, 212, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #5eead4;
+        }
+
+        .info-box h3 {
+            color: #5eead4;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-box ul {
+            color: #e0e0e0;
+            margin-left: 1.5rem;
+        }
+
+        .info-box li {
+            margin-bottom: 0.5rem;
+        }
+
+        .success-message {
+            display: none;
+            background: linear-gradient(135deg, #5eead4 0%, #14b8a6 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .success-message.active {
+            display: block;
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-message h2 {
+            color: #134e4a;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-message p {
+            color: #134e4a;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .home-btn {
+                top: 10px;
+                left: 10px;
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .quote-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .quote-card {
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-btn">← Home</a>
+
+    <div class="header">
+        <div class="header-content">
+            <h1>📦 Get Your Shipping Quote</h1>
+            <p>Fast, Professional Quotes for Domestic & International Delivery</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="quote-card">
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="icon">⚡</div>
+                    <h3>Instant Response</h3>
+                    <p>Quote within 24 hours</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🌍</div>
+                    <h3>Worldwide Shipping</h3>
+                    <p>All 50 states + international</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🛡️</div>
+                    <h3>98% Live Arrival</h3>
+                    <p>Industry-leading guarantee</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">📋</div>
+                    <h3>Full Documentation</h3>
+                    <p>Health certs & pedigrees included</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>What You'll Receive:</h3>
+                <ul>
+                    <li>✅ Detailed shipping cost breakdown</li>
+                    <li>✅ Estimated delivery timeline</li>
+                    <li>✅ Required documentation checklist</li>
+                    <li>✅ Payment options and terms</li>
+                    <li>✅ Direct contact for questions</li>
+                </ul>
+            </div>
+
+
+            
+            <div class="form-section">
+                <h2>Request Your Quote</h2>
+            
+                <form id="quoteForm">
+                    <!-- Hidden inputs for FormSubmit -->
+                    <input type="hidden" name="_to" value="AvilaFarmUSA@proton.me">
+                    <input type="hidden" name="_from" value="no-reply@avilafarmusa.com">
+                    <input type="hidden" name="_autoresponse" 
+                        value="Hi {{First_Name}},
+            
+            Thank you for requesting a shipping quote from Avila Farm USA.
+            
+            Your request has been received and is currently being reviewed. 
+            We will evaluate your location, bird quantity, and shipping options to prepare the most accurate quote.
+            
+            You will receive your personalized shipping estimate shortly.
+            
+            Browse our available gamefowls right away on the home page.
+            
+            Thank you for choosing Avila Farm USA.
+            Quality Gamefowl • Trusted Nationwide Shipping">
+            
+                    <!-- User fields -->
+
+                    <div class="form-group">
+                        <input type="hidden" name="caption" value="shipping quote request">
+                    </div>
+
+                  <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="First_Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="Last_Name" required>
+                        </div>
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="Phone" required>
+                        </div>
+                    </div>
+            
+                    <!-- WhatsApp Number Field -->
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp Number (Optional)</label>
+                        <input type="tel" id="whatsapp" name="WhatsApp">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="location">Delivery Location *</label>
+                        <input type="text" id="location" name="Delivery_Location" required>
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="birdCount">Number of Birds *</label>
+                            <select id="birdCount" name="Number_of_Birds" required>
+                                <option value="">Select...</option>
+                                <option value="1-2">1-2 Birds</option>
+                                <option value="3-5">3-5 Birds</option>
+                                <option value="6-10">6-10 Birds</option>
+                                <option value="11-20">11-20 Birds</option>
+                                <option value="20+">20+ Birds</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="shippingType">Shipping Type *</label>
+                            <select id="shippingType" name="Shipping_Type" required>
+                                <option value="">Select...</option>
+                                <option value="local">Local Pickup</option>
+                                <option value="regional">Regional Delivery (Within 500 miles)</option>
+                                <option value="nationwide">Nationwide US Shipping</option>
+                                <option value="canada-mexico">Canada/Mexico</option>
+                                <option value="international">International Shipping</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="birdType">Type of Birds (Optional)</label>
+                        <select id="birdType" name="Bird_Type">
+                            <option value="">Select...</option>
+                            <option value="Roosters">Roosters</option>
+                            <option value="Breeding Trios">Breeding Trios</option>
+                            <option value="Chicks">Chicks</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="deliveryDate">Preferred Delivery Timeframe (Optional)</label>
+                        <select id="deliveryDate" name="Delivery_Timeframe">
+                            <option value="">Select...</option>
+                            <option value="asap">ASAP (Within 1 week)</option>
+                            <option value="1-2weeks">1-2 Weeks</option>
+                            <option value="2-4weeks">2-4 Weeks</option>
+                            <option value="1-2months">1-2 Months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="message">Additional Details or Questions</label>
+                        <textarea id="message" name="Message"></textarea>
+                    </div>
+            
+                    <button type="submit" class="submit-btn">Get My Shipping Quote</button>
+                </form>
+            
+                <!-- Pop-up Success & Error Boxes -->
+                <div id="successPopup" class="success-message">
+                    <h2>Request Sent!</h2>
+                    <p>Thank you for requesting a shipping quote from Avila Farm USA.<br>
+                    Your request has been received and is currently being reviewed. 
+                    We will evaluate your location, bird quantity, and shipping options to prepare the most accurate quote and get back to you shortly. you can now browse our available gamefowls and make a purchase of your favorite bloodlines</p>
+                </div>
+            
+                <div id="errorPopup" class="success-message" style="background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);">
+                    <h2>Error!</h2>
+                    <p>There was an error submitting the form. Please check your input and try again.</p>
+                </div>
+            </div>
+            
+            <script>
+            document.getElementById('quoteForm').addEventListener('submit', function(e){
+                e.preventDefault(); // Prevent page reload
+            
+                const form = e.target;
+                const formData = new FormData(form);
+            
+                // Hide popups before new submission
+                document.getElementById('successPopup').classList.remove('active');
+                document.getElementById('errorPopup').classList.remove('active');
+            
+                fetch('https://formsubmit.co/ajax/AvilaFarmUSA@proton.me', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if(data.success === 'true' || data.success === true){
+                        document.getElementById('successPopup').classList.add('active');
+                        form.reset();
+                        // Auto-hide after 1 minute (60000ms)
+                        setTimeout(() => {
+                            document.getElementById('successPopup').classList.remove('active');
+                        }, 60000);
+                    } else {
+                        document.getElementById('errorPopup').classList.add('active');
+                        setTimeout(() => {
+                            document.getElementById('errorPopup').classList.remove('active');
+                        }, 60000);
+                    }
+                })
+                .catch(error => {
+                    console.error(error);
+                    document.getElementById('errorPopup').classList.add('active');
+                    setTimeout(() => {
+                        document.getElementById('errorPopup').classList.remove('active');
+                    }, 60000);
+                });
+            });
+            </script>
+            
+            
+            
+            
+            
+
+
+</body>
+</html>

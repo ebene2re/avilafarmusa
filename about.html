@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Avila Farm USA | Heritage Gamefowl Breeding Since 1987</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f0f;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 1.5rem 5%;
+            border-bottom: 3px solid #e94560;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e94560;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav a {
+            color: #ddd;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: #e94560;
+        }
+
+        /* Hero Section */
+        .about-hero {
+            background: url('images/Screenshot_20251004-121245.jpg') center/500px;
+            background-repeat: no-repeat;
+                   background-color: #454444;     
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 5%;
+            position: relative;
+            background-blend-mode: overlay;
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.4) 100%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            font-weight: 800;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: #f0f0f0;
+            font-weight: 300;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Main Content */
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 5%;
+        }
+
+        .about-section {
+            margin-bottom: 5rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #e94560;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #e94560, transparent);
+        }
+
+        .about-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .about-text strong {
+            color: #e94560;
+            font-weight: 600;
+        }
+
+        /* Heritage Timeline */
+        .timeline {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(233, 69, 96, 0.05));
+            border-left: 4px solid #e94560;
+            padding: 2rem 2rem 2rem 3rem;
+            border-radius: 0 12px 12px 0;
+            margin: 3rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '🐓';
+            position: absolute;
+            left: -3.5rem;
+            font-size: 1.5rem;
+        }
+
+        .timeline-year {
+            font-size: 1.5rem;
+            color: #e94560;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-text {
+            font-size: 1.1rem;
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+            border: 2px solid rgba(233, 69, 96, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            border-color: #e94560;
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-title {
+            font-size: 1.5rem;
+            color: #e94560;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .value-text {
+            font-size: 1rem;
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        /* Certifications Section */
+        .certifications {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15), rgba(233, 69, 96, 0.05));
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .cert-badges {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .cert-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .cert-icon {
+            width: 100px;
+            height: 100px;
+            background: rgba(233, 69, 96, 0.2);
+            border: 3px solid #e94560;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .cert-label {
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Quote Section */
+        .heritage-quote {
+            background: linear-gradient(135deg, #e94560, #c9184a);
+            padding: 3rem;
+            border-radius: 15px;
+            margin: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .heritage-quote::before {
+            content: '"';
+            position: absolute;
+            font-size: 15rem;
+            color: rgba(255,255,255,0.1);
+            top: -50px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+
+        .quote-text {
+            font-size: 1.8rem;
+            color: #fff;
+            font-style: italic;
+            line-height: 1.6;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(78, 204, 163, 0.1), rgba(78, 204, 163, 0.05));
+            border: 2px solid rgba(78, 204, 163, 0.3);
+            border-radius: 15px;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            color: #4ecca3;
+            margin-bottom: 1rem;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn-primary {
+            background: linear-gradient(135deg, #e94560, #c9184a);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+        }
+
+        .cta-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(233, 69, 96, 0.6);
+        }
+
+        .cta-btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .cta-btn-secondary:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            padding: 3rem 5%;
+            text-align: center;
+            border-top: 3px solid #e94560;
+            margin-top: 5rem;
+        }
+
+        .footer p {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-text {
+                font-size: 1rem;
+                text-align: left;
+            }
+
+            .timeline {
+                padding: 1.5rem 1rem 1.5rem 2rem;
+            }
+
+            .timeline-item::before {
+                left: -2.5rem;
+                font-size: 1.2rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav {
+                display: none; /* Add hamburger menu if needed */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div style="margin-top: 10px;;  width: 110px; height: 70px;   background-image: url('images/Avila_Farm_USA_Logo-removebg-preview.png'); border-radius: 10%;  background-repeat: no-repeat; background-position:  center; background-size: cover;"></div> 
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html#roosters">Birds</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1>Our Heritage</h1>
+            <p class="hero-subtitle">Generational Excellence in American Gamefowl Breeding</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="about-container">
+        
+        <!-- About Section -->
+        <section class="about-section">
+            <h2 class="section-title">About Avila Farm USA</h2>
+            
+            <p class="about-text">
+                <strong>Avila Farm USA</strong> is a generational American gamefowl heritage farm based in Texas, built on values passed down long before the digital age.
+            </p>
+
+            <p class="about-text">
+                Our story begins in the early 19th century, when a Spanish-speaking family from Mexico migrated to the United States in search of opportunity and stability. Upon settling in Texas, they found more than land — they found a lifelong connection to the American gamefowl culture. What began as admiration soon became dedication, discipline, and mastery.
+            </p>
+
+            <p class="about-text">
+                Over generations, that passion evolved into responsible breeding, structured care, and a deep respect for the birds and the culture surrounding them. Each generation carried forward not just bloodlines, but principles: <strong>patience, honesty, and accountability</strong>.
+            </p>
+
+            <p class="about-text">
+                Today, Avila Farm USA continues that legacy with modern standards and full compliance with U.S. federal regulations governing poultry and gamefowl. We operate transparently, prioritize ethical breeding practices, and maintain structured housing and daily care routines designed to support health and proper development.
+            </p>
+
+            <p class="about-text">
+                We do not believe heritage is something to be claimed loudly — it is something to be proven quietly, over time. Our farm exists to preserve tradition, protect integrity within the gamefowl community, and serve breeders who value authenticity over shortcuts.
+            </p>
+
+            <p class="about-text">
+                <strong>Avila Farm USA stands as a living bridge between generations</strong> — honoring the past, operating responsibly in the present, and protecting the future of American gamefowl heritage.
+            </p>
+        </section>
+
+        <!-- Heritage Timeline -->
+        <section class="about-section">
+            <h2 class="section-title">Our Journey</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">Early 1900s</div>
+                    <div class="timeline-text">
+                        Family migration from Mexico to Texas. First connection to American gamefowl culture established.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">1987</div>
+                    <div class="timeline-text">
+                        Avila Farm USA officially founded. Formalized breeding program begins with structured documentation and bloodline preservation.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">1995-2010</div>
+                    <div class="timeline-text">
+                        Expansion of breeding operations. Introduction of advanced health protocols and facility modernization.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2010-Present</div>
+                    <div class="timeline-text">
+                        Third generation takes leadership. Full NPIP certification achieved. Digital presence established while maintaining traditional values.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="about-section">
+            <h2 class="section-title">Our Core Values</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🏛️</div>
+                    <h3 class="value-title">Heritage</h3>
+                    <p class="value-text">
+                        Preserving generations of American gamefowl tradition with respect for those who came before us.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3 class="value-title">Integrity</h3>
+                    <p class="value-text">
+                        Operating transparently with honesty in every transaction, every bloodline, every conversation.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">⚖️</div>
+                    <h3 class="value-title">Accountability</h3>
+                    <p class="value-text">
+                        Full compliance with federal regulations and ethical breeding standards without compromise.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🔬</div>
+                    <h3 class="value-title">Excellence</h3>
+                    <p class="value-text">
+                        Structured care routines and modern health protocols supporting optimal bird development.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🎓</div>
+                    <h3 class="value-title">Knowledge</h3>
+                    <p class="value-text">
+                        Sharing expertise built over decades to support serious breeders in their programs.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h3 class="value-title">Sustainability</h3>
+                    <p class="value-text">
+                        Protecting bloodlines and culture for future generations through responsible practices.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <div class="certifications">
+            <h2 class="section-title" style="text-align: center; color: #fff;">Certifications & Compliance</h2>
+            <p class="about-text" style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">
+                We operate with full transparency and compliance with all federal and state regulations governing gamefowl breeding and sales.
+            </p>
+            
+            <div class="cert-badges">
+                <div class="cert-badge">
+                    <div class="cert-icon">✓</div>
+                    <div class="cert-label">USDA Licensed</div>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">🏥</div>
+                    <div class="cert-label">NPIP Certified</div>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">⭐</div>
+                    <div class="cert-label">BBB A+ Rated</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quote -->
+        <div class="heritage-quote">
+            <p class="quote-text">
+                "We do not believe heritage is something to be claimed loudly — it is something to be proven quietly, over time."
+            </p>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2 class="cta-title">Ready to Start Your Program?</h2>
+            <p class="cta-text">
+                Whether you're building a new yard or strengthening existing bloodlines, we're here to support serious breeders with authentic genetics and generational expertise.
+            </p>
+            <div class="cta-buttons">
+                <a href="index.html#roosters" class="cta-btn cta-btn-primary">View Available Birds</a>
+                <a href="index.html#contact" class="cta-btn cta-btn-secondary">Contact Us</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Avila Farm USA. All Rights Reserved.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            All birds sold for exhibition, breeding, and ornamental purposes only.<br>
+            We comply with all federal and state regulations regarding gamefowl sales.
+        </p>
+    </footer>
+
+</body>
+</html>
